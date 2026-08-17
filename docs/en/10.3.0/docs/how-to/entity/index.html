@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Entity | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Entity | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="entity">Entity</h1>
+
+<!--Displaying a Column of One Entity in Another Entity with RecroGrid Framework-->
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGbCRFSELi_5SYGa2Clv7seD5Y6GUAJ2X&rel=0" frameborder="0" allowfullscreen="true"></iframe></div>
+<p>The RecroGrid Framework performs the display of data and operations on them based on Entities. Entities are a group of properties that need to be handled together during display and editing. The framework can automatically generate entities based on the logical data model, but they can also be created at the code level at compile or runtime. For quicker usage, these entities are stored in the system's database, and they can be manually edited through the RGF Admin dashboard (/RGF/Admin).</p>
+<p>The various entities significantly influence the operation. Entities describe how they are constructed from different data fields or properties. In these properties, it is determined what data type a field has, how it is connected to other entities. It is here that the configuration is set for where and with what control it will appear on the user interface. Numerous pre-defined or custom parameters can be linked to entities and their properties, influencing their functionality.</p>
+<p>Typically, we generate the entity from a class in the data model associated with an Entity Framework DBContext. If the system encounters an entity reference that is available based on the model but has not been stored yet, it automatically generates it at runtime. However, this strategy is to be avoided. It is recommended to always pre-generate entities based on DbSet-Entity in the RGF Admin dashboard. For portability reasons, entities can be synchronized between different databases and installations using the built-in export/import and installation features.</p>
+<p><img src="../../shared/images/pictures/rgf.admin/product-create-entity.png" alt=""></p>
+<p>Entities can be associated with version numbers, so an entity related to the same logical model can vary significantly in terms of appearance or functionality. A typical example is displaying a data structure with a different column layout or form view, and for convenience, it needs to be directly linked to a separate menu item. Implementing this does not require separate program code; the system administrator can perform this task on the Admin dashboard for ease of use.</p>
+<p>There is an option to copy an entity, so you only need to set the differences. This can be done through the Entities List Functions/Clone menu.</p>
+<p><img src="../../shared/images/pictures/rgf.admin/admin-clone.png" alt=""></p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="basic.html">Basic parameters</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

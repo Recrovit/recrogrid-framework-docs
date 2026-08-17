@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Database settings | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Database settings | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="database-settings">Database settings</h1>
+
+<h2 id="the-model">The model</h2>
+<p>By default, the RecroGrid Framework generates a BaseDbContext class and uses it for database operations. It is recommended to derive the BaseDbContex from your own DbContext. <strong>Initialization of the database is necessary for the operation of the RecroGrid Framework</strong>, even if custom DbContext or database tables do not exist yet.</p>
+<h2 id="configure-connectionstring">Configure ConnectionString</h2>
+<p>If ConnectionString does not exist yet, then add ConnectionString to appsettings.json</p>
+<pre><code class="lang-json">&quot;ConnectionStrings&quot;: {
+    &quot;SQLServer&quot;: &quot;Server=(localdb)\\mssqllocaldb;Database=DATABASE_NAME;Trusted_Connection=True;MultipleActiveResultSets=false&quot;,
+    //&quot;SQLServer&quot;: &quot;Server=.\\SQLExpress;Database=DATABASE_NAME;Trusted_Connection=True;MultipleActiveResultSets=false&quot;,
+    //&quot;SQLServer&quot;: &quot;Server=SQLServer2019.lan,1433;Database=DATABASE_NAME;User ID=USER_NAME;Password=PASSWORD;MultipleActiveResultSets=false&quot;,
+    &quot;PostgreSQL&quot;: &quot;Host=192.168.5.16;Database=DATABASE_NAME;Username=USER_NAME;Password=PASSWORD;Command Timeout=15&quot;,
+    &quot;Oracle23&quot;: &quot;Data Source=Oracle23ai:1521/free;User Id=C##USER_NAME;Password=PASSWORD&quot;
+  }
+</code></pre>
+<pre><code class="lang-json">&quot;Recrovit&quot;: {
+    &quot;RecroGridFramework&quot;: {
+      &quot;DefaultConnectionName&quot;: &quot;SQLServer&quot;
+      //&quot;DefaultConnectionName&quot;: &quot;PostgreSQL&quot;,
+      //&quot;DefaultConnectionName&quot;: &quot;Oracle23&quot;
+    }
+  },
+</code></pre>
+<h2 id="initialize-recrogrid-framework-database">Initialize RecroGrid Framework database</h2>
+<p>Start the application and navigate to the <strong>/RGF/Admin</strong> page, then initialize the database.</p>
+<p>After successful initialization, the system is capable of displaying all database tables on the Admin interface.</p>
+<ul>
+<li><a href="../../components/admin/dashboard.html">Admin Dashboard</a></li>
+</ul>
+<h2 id="custom-dbcontext">Custom DbContext</h2>
+<div class="alert alert-success alert-tip">
+<h5>Tip</h5>
+<p>For testing purposes, the RecroGrid Framework Demo <a href="https://github.com/RecroGridFramework/RGF.Demo.Northwind">Northwind database</a> is available, containing only the necessary classes for the database in a separate project, ready for use.</p>
+</div>
+<p>It is recommended to derive the BaseDbContext from your own DbContext. However, if you prefer not to do this, you can disable the system from generating the BaseDbContext class.</p>
+<pre><code class="lang-xml">&lt;PropertyGroup&gt;
+  &lt;RGFBaseDbContext&gt;false&lt;/RGFBaseDbContext&gt;
+  &lt;RGFCustomSql&gt;false&lt;/RGFCustomSql&gt;
+&lt;/PropertyGroup&gt;
+</code></pre>
+<p>When using a custom DbContext, you should also specify that type during service registration.</p>
+<pre><code class="lang-csharp">//builder.AddBaseDbContext();
+builder.Services.AddDbContext&lt;YourDbContext&gt;(options =&gt;
+            options.UseSqlServer(RGDataContext.DefaultConnectionString));
+
+//app.UseRGF&lt;BaseDbContext, BaseDbContextPool, BaseDbContextPool&gt;();
+app.UseRGF&lt;YourDbContext&gt;();
+</code></pre>
+<p>If you need more information on using the database, please refer to the <a href="https://learn.microsoft.com/en-us/ef/core/">Entity Framework</a> documentation.</p>
+<p>For an existing database, we recommend using the <a href="https://github.com/ErikEJ/EFCorePowerTools">EF Core Power Tools</a> (Visual Studio extension), which is capable of generating the model based on the database.</p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="../blazor-app.html">Blazor WebAssembly App</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../index.html">Get Started</a></li>
+<li><a href="../../how-to/database-types.html">Database Types</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgfFilterComponent | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgfFilterComponent | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client-blazor/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent" class="text-break">
+Class RgfFilterComponent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.html">Blazor</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.Blazor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgfFilterComponent : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></div>
+      <div><span class="xref">RgfFilterComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">IComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent">IHandleEvent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender">IHandleAfterRender</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync">ComponentBase.OnInitializedAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset">ComponentBase.OnParametersSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync">ComponentBase.OnParametersSetAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged">ComponentBase.StateHasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender">ComponentBase.ShouldRender()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">ComponentBase.OnAfterRender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync">ComponentBase.OnAfterRenderAsync(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)">ComponentBase.InvokeAsync(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.dispatchexceptionasync">ComponentBase.DispatchExceptionAsync(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync">ComponentBase.SetParametersAsync(ParameterView)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.rendererinfo">ComponentBase.RendererInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assets">ComponentBase.Assets</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assignedrendermode">ComponentBase.AssignedRenderMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent__ctor" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.#ctor">
+  RgfFilterComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFilterComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_Condition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.Condition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_Condition" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.Condition">
+  Condition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFilter.Condition? Condition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_EntityParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.EntityParameters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_EntityParameters" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.EntityParameters">
+  EntityParameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RgfEntityParameters EntityParameters { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfEntityParameters.html">RgfEntityParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterHandler_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterHandler*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterHandler" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterHandler">
+  FilterHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgFilterHandler FilterHandler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../client/Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.html">IRgFilterHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterParameters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterParameters" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterParameters">
+  FilterParameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFilterParameters FilterParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFilterParameters.html">RgfFilterParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterSettings_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterSettings*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterSettings" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterSettings">
+  FilterSettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFilterSettings FilterSettings { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings.html">RgfFilterSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FilterTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FilterTemplate">
+  FilterTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfFilterComponent&gt; FilterTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.html">RgfFilterComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FooterTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FooterTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_FooterTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.FooterTemplate">
+  FooterTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfFilterComponent&gt; FooterTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.html">RgfFilterComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_IsFilterActive_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.IsFilterActive*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_IsFilterActive" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.IsFilterActive">
+  IsFilterActive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFilterActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_IsPublicFilterSettingAllowed_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.IsPublicFilterSettingAllowed*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_IsPublicFilterSettingAllowed" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.IsPublicFilterSettingAllowed">
+  IsPublicFilterSettingAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPublicFilterSettingAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RgfFilterProperties_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RgfFilterProperties*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RgfFilterProperties" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RgfFilterProperties">
+  RgfFilterProperties
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFilterProperty[] RgfFilterProperties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs">RgfFilterProperty</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_VisibleRoles_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.VisibleRoles*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_VisibleRoles" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.VisibleRoles">
+  VisibleRoles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; VisibleRoles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_AddBracket_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.AddBracket*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_AddBracket_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.AddBracket(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition)">
+  AddBracket(Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBracket(RgfFilter.Condition condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_AddCondition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.AddCondition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_AddCondition_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.AddCondition(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition)">
+  AddCondition(Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCondition(RgfFilter.Condition condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_BuildRenderTree_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.BuildRenderTree*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+  BuildRenderTree(RenderTreeBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the component to the supplied <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BuildRenderTree(RenderTreeBuilder __builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_ChangeProperty_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.ChangeProperty*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_ChangeProperty_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.ChangeProperty(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition,System.Int32)">
+  ChangeProperty(Condition, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChangeProperty(RgfFilter.Condition condition, int newPropertyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+    <dt><code>newPropertyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_ChangeQueryOperator_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.ChangeQueryOperator*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_ChangeQueryOperator_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_QueryOperator_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.ChangeQueryOperator(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition,Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.QueryOperator)">
+  ChangeQueryOperator(Condition, QueryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChangeQueryOperator(RgfFilter.Condition condition, RgfFilter.QueryOperator newOperator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+    <dt><code>newOperator</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">QueryOperator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_DeletePredefinedFilter_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.DeletePredefinedFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_DeletePredefinedFilter" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.DeletePredefinedFilter">
+  DeletePredefinedFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeletePredefinedFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_Dispose_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.Dispose*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_Dispose" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnCancel_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnCancel*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnCancel_Microsoft_AspNetCore_Components_Web_MouseEventArgs_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnCancel(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
+  OnCancel(MouseEventArgs?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnCancel(MouseEventArgs? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.web.mouseeventargs">MouseEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnDeletePredefinedFilter_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnDeletePredefinedFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnDeletePredefinedFilter" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnDeletePredefinedFilter">
+  OnDeletePredefinedFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDeletePredefinedFilter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnInitialized_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnInitialized*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnInitialized" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnInitialized">
+  OnInitialized()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked when the component is ready to start, having received its
+initial parameters from its parent in the render tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnOk_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnOk*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnOk_Microsoft_AspNetCore_Components_Web_MouseEventArgs_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnOk(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
+  OnOk(MouseEventArgs?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnOk(MouseEventArgs? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.web.mouseeventargs">MouseEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnSavePredefinedFilter_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnSavePredefinedFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnSavePredefinedFilter" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnSavePredefinedFilter">
+  OnSavePredefinedFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnSavePredefinedFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnSetPredefinedFilter_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnSetPredefinedFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnSetPredefinedFilter_System_Nullable_System_Int32__System_String_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnSetPredefinedFilter(System.Nullable{System.Int32},System.String)">
+  OnSetPredefinedFilter(int?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool OnSetPredefinedFilter(int? filterSettingsId, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnShowFilter_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnShowFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_OnShowFilter_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs_Recrovit_RecroGridFramework_Client_Events_RgfToolbarEventArgs__" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.OnShowFilter(Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{Recrovit.RecroGridFramework.Client.Events.RgfToolbarEventArgs})">
+  OnShowFilter(IRgfEventArgs&lt;RgfToolbarEventArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnShowFilter(IRgfEventArgs&lt;RgfToolbarEventArgs&gt; args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfToolbarEventArgs.cs">RgfToolbarEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RecreateAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RecreateAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RecreateAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RecreateAsync">
+  RecreateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RecreateAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RemoveBracket_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RemoveBracket*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RemoveBracket_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RemoveBracket(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition)">
+  RemoveBracket(Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBracket(RgfFilter.Condition condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RemoveCondition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RemoveCondition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFilterComponent_RemoveCondition_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFilterComponent.RemoveCondition(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition)">
+  RemoveCondition(Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFilterComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCondition(RgfFilter.Condition condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

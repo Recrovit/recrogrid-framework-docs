@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgfFormComponent | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgfFormComponent | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client-blazor/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent" class="text-break">
+Class RgfFormComponent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.html">Blazor</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.Blazor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgfFormComponent : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></div>
+      <div><span class="xref">RgfFormComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">IComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent">IHandleEvent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender">IHandleAfterRender</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset">ComponentBase.OnParametersSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged">ComponentBase.StateHasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender">ComponentBase.ShouldRender()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">ComponentBase.OnAfterRender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)">ComponentBase.InvokeAsync(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.dispatchexceptionasync">ComponentBase.DispatchExceptionAsync(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync">ComponentBase.SetParametersAsync(ParameterView)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.rendererinfo">ComponentBase.RendererInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assets">ComponentBase.Assets</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assignedrendermode">ComponentBase.AssignedRenderMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent__ctor" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.#ctor">
+  RgfFormComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFormComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_CurrentEditContext_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.CurrentEditContext*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_CurrentEditContext" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.CurrentEditContext">
+  CurrentEditContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditContext CurrentEditContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.editcontext">EditContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DefaultFormGroupLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DefaultFormGroupLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DefaultFormGroupLayoutTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DefaultFormGroupLayoutTemplate">
+  DefaultFormGroupLayoutTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderFragment&lt;RgfFormGroupLayoutParameters&gt; DefaultFormGroupLayoutTemplate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormGroupLayoutParameters.html">RgfFormGroupLayoutParameters</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DefaultFormItemLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DefaultFormItemLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DefaultFormItemLayoutTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DefaultFormItemLayoutTemplate">
+  DefaultFormItemLayoutTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderFragment&lt;RgfFormItemParameters&gt; DefaultFormItemLayoutTemplate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters.html">RgfFormItemParameters</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Disposables_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Disposables*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Disposables" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Disposables">
+  Disposables
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IDisposable&gt; Disposables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_EntityParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.EntityParameters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_EntityParameters" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.EntityParameters">
+  EntityParameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RgfEntityParameters EntityParameters { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfEntityParameters.html">RgfEntityParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FooterTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FooterTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FooterTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FooterTemplate">
+  FooterTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment&lt;RgfFormComponent&gt;? FooterTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.html">RgfFormComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormComponent_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormComponent*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormComponent" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormComponent">
+  FormComponent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public ComponentBase FormComponent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormData_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormData*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormData" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormData">
+  FormData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormViewData FormData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../client/Recrovit.RecroGridFramework.Client.Models.FormViewData.html">FormViewData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormEditMode_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormEditMode*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormEditMode" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormEditMode">
+  FormEditMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormEditMode FormEditMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.FormEditMode.html">FormEditMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormGroupLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormGroupLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormGroupLayoutTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormGroupLayoutTemplate">
+  FormGroupLayoutTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment&lt;RgfFormGroupLayoutParameters&gt;? FormGroupLayoutTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormGroupLayoutParameters.html">RgfFormGroupLayoutParameters</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormHandler_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormHandler*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormHandler" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormHandler">
+  FormHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgFormHandler FormHandler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../client/Recrovit.RecroGridFramework.Client.Handlers.IRgFormHandler.html">IRgFormHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormItemLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormItemLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormItemLayoutTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormItemLayoutTemplate">
+  FormItemLayoutTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment&lt;RgfFormItemParameters&gt;? FormItemLayoutTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters.html">RgfFormItemParameters</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormItemTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormItemTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormItemTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormItemTemplate">
+  FormItemTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfFormItemParameters&gt; FormItemTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters.html">RgfFormItemParameters</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormParameters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormParameters" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormParameters">
+  FormParameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFormParameters FormParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormParameters.html">RgfFormParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormProperties_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormProperties*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormProperties" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormProperties">
+  FormProperties
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RgfForm.Property&gt; FormProperties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfForm.cs">RgfForm</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfForm.cs">Property</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormTemplate">
+  FormTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfFormComponent&gt; FormTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.html">RgfFormComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormValidation_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormValidation*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormValidation" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormValidation">
+  FormValidation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfFormValidationComponent? FormValidation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormValidationComponent.html">RgfFormValidationComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormValidationTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormValidationTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormValidationTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormValidationTemplate">
+  FormValidationTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment&lt;RgfFormComponent&gt; FormValidationTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.html">RgfFormComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GridSelectTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GridSelectTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GridSelectTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GridSelectTemplate">
+  GridSelectTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment&lt;RgfSelectParam&gt;? GridSelectTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfSelectParam.cs">RgfSelectParam</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_IsFormDataBeingSet_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.IsFormDataBeingSet*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_IsFormDataBeingSet" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.IsFormDataBeingSet">
+  IsFormDataBeingSet
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFormDataBeingSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_JsRuntime_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.JsRuntime*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_JsRuntime" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.JsRuntime">
+  JsRuntime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Inject]
+public IJSRuntime JsRuntime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.jsinterop.ijsruntime">IJSRuntime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Manager_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Manager*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Manager" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Manager">
+  Manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgManager Manager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../client/Recrovit.RecroGridFramework.Client.Handlers.IRgManager.html">IRgManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_PropertyTooltips_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.PropertyTooltips*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_PropertyTooltips" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.PropertyTooltips">
+  PropertyTooltips
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfPropertyTooltips PropertyTooltips { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfPropertyTooltips.html">RgfPropertyTooltips</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ApplyAndNextNew_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ApplyAndNextNew*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ApplyAndNextNew" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ApplyAndNextNew">
+  ApplyAndNextNew()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ApplyAndNextNew()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ApplySelectParam_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ApplySelectParam*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ApplySelectParam_Recrovit_RecroGridFramework_Abstraction_Models_RgfSelectParam_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ApplySelectParam(Recrovit.RecroGridFramework.Abstraction.Models.RgfSelectParam)">
+  ApplySelectParam(RgfSelectParam)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplySelectParam(RgfSelectParam param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfSelectParam.html">RgfSelectParam</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_BeginSaveAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.BeginSaveAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_BeginSaveAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.BeginSaveAsync(System.Boolean)">
+  BeginSaveAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; BeginSaveAsync(bool close)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>close</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_BuildRenderTree_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.BuildRenderTree*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+  BuildRenderTree(RenderTreeBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the component to the supplied <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BuildRenderTree(RenderTreeBuilder __builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Dispose_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Dispose*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_Dispose" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DisposeFormComponent_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DisposeFormComponent*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_DisposeFormComponent" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.DisposeFormComponent">
+  DisposeFormComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DisposeFormComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FirstFormItemAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FirstFormItemAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FirstFormItemAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FirstFormItemAsync">
+  FirstFormItemAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FirstFormItemAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormSaveStartAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormSaveStartAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_FormSaveStartAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.FormSaveStartAsync(System.Boolean)">
+  FormSaveStartAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; FormSaveStartAsync(bool close)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>close</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormGroupLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormGroupLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormGroupLayoutTemplate_Recrovit_RecroGridFramework_Client_Blazor_Parameters_RgfFormGroupLayoutParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormGroupLayoutTemplate(Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormGroupLayoutParameters)">
+  GetFormGroupLayoutTemplate(RgfFormGroupLayoutParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderFragment GetFormGroupLayoutTemplate(RgfFormGroupLayoutParameters param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormGroupLayoutParameters.html">RgfFormGroupLayoutParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormItemLayoutTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormItemLayoutTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormItemLayoutTemplate_Recrovit_RecroGridFramework_Client_Blazor_Parameters_RgfFormItemParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormItemLayoutTemplate(Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters)">
+  GetFormItemLayoutTemplate(RgfFormItemParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderFragment GetFormItemLayoutTemplate(RgfFormItemParameters param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters.html">RgfFormItemParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormItemTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormItemTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormItemTemplate_Recrovit_RecroGridFramework_Client_Blazor_Parameters_RgfFormItemParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormItemTemplate(Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters)">
+  GetFormItemTemplate(RgfFormItemParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderFragment GetFormItemTemplate(RgfFormItemParameters param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfFormItemParameters.html">RgfFormItemParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormValidationTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormValidationTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_GetFormValidationTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.GetFormValidationTemplate">
+  GetFormValidationTemplate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderFragment GetFormValidationTemplate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_LastFormItemAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.LastFormItemAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_LastFormItemAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.LastFormItemAsync">
+  LastFormItemAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LastFormItemAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_NextFormItemAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.NextFormItemAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_NextFormItemAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.NextFormItemAsync">
+  NextFormItemAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task NextFormItemAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnAfterRenderAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnAfterRenderAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnAfterRenderAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnAfterRenderAsync(System.Boolean)">
+  OnAfterRenderAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered interactively and the UI has finished
+updating (for example, after elements have been added to the browser DOM). Any <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a>
+fields will be populated by the time this runs.</p>
+<p>This method is not invoked during prerendering or server-side rendering, because those processes
+are not attached to any live browser DOM and are already complete before the DOM is updated.</p>
+<p>Note that the component does not automatically re-render after the completion of any returned <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>,
+because that would cause an infinite render loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnAfterRenderAsync(bool firstRender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstRender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to <code>true</code> if this is the first time <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">OnAfterRender(bool)</a> has been invoked
+on this component instance; otherwise <code>false</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing any asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnAfterRenderAsync_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">OnAfterRender(bool)</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync">OnAfterRenderAsync(bool)</a> lifecycle methods
+are useful for performing interop, or interacting with values received from <code>@ref</code>.
+Use the <code class="paramref">firstRender</code> parameter to ensure that initialization work is only performed
+once.</p>
+</div>
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnCloseAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnCloseAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnCloseAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnCloseAsync">
+  OnCloseAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnCloseAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnFindEntityAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnFindEntityAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnFindEntityAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs_Recrovit_RecroGridFramework_Client_Events_RgfFormEventArgs__" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnFindEntityAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{Recrovit.RecroGridFramework.Client.Events.RgfFormEventArgs})">
+  OnFindEntityAsync(IRgfEventArgs&lt;RgfFormEventArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnFindEntityAsync(IRgfEventArgs&lt;RgfFormEventArgs&gt; arg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfFormEventArgs.cs">RgfFormEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnGridItemSelected_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnGridItemSelected*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnGridItemSelected_System_ComponentModel_CancelEventArgs_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnGridItemSelected(System.ComponentModel.CancelEventArgs)">
+  OnGridItemSelected(CancelEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGridItemSelected(CancelEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.canceleventargs">CancelEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnInitialized_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnInitialized*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnInitialized" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnInitialized">
+  OnInitialized()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked when the component is ready to start, having received its
+initial parameters from its parent in the render tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnInitializedAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnInitializedAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnInitializedAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnInitializedAsync">
+  OnInitializedAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked when the component is ready to start, having received its
+initial parameters from its parent in the render tree.</p>
+<p>Override this method if you will perform an asynchronous operation and
+want the component to refresh when that operation is completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnInitializedAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing any asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnParametersSetAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnParametersSetAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnParametersSetAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnParametersSetAsync">
+  OnParametersSetAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked when the component has received parameters from its parent in
+the render tree, and the incoming values have been assigned to properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnParametersSetAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing any asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnSaveAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnSaveAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnSaveAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnSaveAsync(System.Boolean)">
+  OnSaveAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RgfResult&lt;RgfFormResult&gt;&gt; OnSaveAsync(bool refresh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfFormResult.cs">RgfFormResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnUserMessage_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnUserMessage*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_OnUserMessage_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs_Recrovit_RecroGridFramework_Client_Events_RgfUserMessageEventArgs__" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.OnUserMessage(Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{Recrovit.RecroGridFramework.Client.Events.RgfUserMessageEventArgs})">
+  OnUserMessage(IRgfEventArgs&lt;RgfUserMessageEventArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUserMessage(IRgfEventArgs&lt;RgfUserMessageEventArgs&gt; args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfUserMessageEventArgs.cs">RgfUserMessageEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ParametersSetAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ParametersSetAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ParametersSetAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfEntityKey_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ParametersSetAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfEntityKey)">
+  ParametersSetAsync(RgfEntityKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ParametersSetAsync(RgfEntityKey entityKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityKey</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfEntityKey.html">RgfEntityKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_PrevFormItemAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.PrevFormItemAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_PrevFormItemAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.PrevFormItemAsync">
+  PrevFormItemAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PrevFormItemAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_SaveAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.SaveAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_SaveAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.SaveAsync(System.Boolean)">
+  SaveAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfFormResult&gt;&gt; SaveAsync(bool refresh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refresh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfFormResult.cs">RgfFormResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ValidateAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ValidateAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfFormComponent_ValidateAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfFormComponent.ValidateAsync">
+  ValidateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfFormComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; ValidateAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

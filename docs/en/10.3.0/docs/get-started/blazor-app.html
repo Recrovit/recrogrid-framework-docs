@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Blazor WebAssembly App | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Blazor WebAssembly App | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="blazor-webassembly-app">Blazor WebAssembly App</h1>
+
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/sGsGtsyWbnU?si=S4q9BQVPdALhNi8G&rel=0" frameborder="0" allowfullscreen="true"></iframe></div>
+<h2 id="create-app">Create App</h2>
+<h2 id="create-a-new-blazor-webassembly-app-in-visual-studio">Create a new Blazor WebAssembly App in Visual Studio</h2>
+<p>To prepare for later user management, choose Individual Accounts.</p>
+<p><img src="../shared/images/pictures/10.0/howto/installation/blazor.1.create.png" alt=""></p>
+<p><img src="../shared/images/pictures/10.0/howto/installation/blazor.2.create2.png" alt=""></p>
+<h2 id="install-recrogrid-framework-blazor-ui">Install RecroGrid Framework Blazor UI</h2>
+<p>RecroGrid Framework Blazor UI is distributed as the <a href="https://www.nuget.org/packages/Recrovit.RecroGridFramework.Client.Blazor.UI"><img src="https://img.shields.io/nuget/v/Recrovit.RecroGridFramework.Client.Blazor.UI?label=RGF.Client.Blazor.UI" alt="RGF.UI"></a> nuget package.</p>
+<p>Install the package using .NET CLI or Package Manager</p>
+<pre><code class="lang-powershell">dotnet add package Recrovit.RecroGridFramework.Client.Blazor.UI
+</code></pre>
+<pre><code class="lang-powershell">Install-Package Recrovit.RecroGridFramework.Client.Blazor.UI
+</code></pre>
+<p>Remove the Bootstrap reference from index.html if it contains it</p>
+<pre><code class="lang-xml">&lt;link href=&quot;css/bootstrap/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+</code></pre>
+<h2 id="register-recrogrid-framework-services">Register RecroGrid Framework Services</h2>
+<p>Open ~/Program.cs file and register the RecroGrid Framework Blazor UI Services in the client web app.</p>
+<pre><code class="lang-csharp">using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Recrovit.RecroGridFramework.Client.Blazor;
+using Recrovit.RecroGridFramework.Client.Blazor.UI;
+
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add&lt;App&gt;(&quot;#app&quot;);
+builder.RootComponents.Add&lt;HeadOutlet&gt;(&quot;head::after&quot;);
+
+builder.Services.AddScoped(sp =&gt; new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+builder.Services.AddOidcAuthentication(options =&gt;
+{
+    // Configure your authentication provider options here.
+    // For more information, see https://aka.ms/blazor-standalone-auth
+    builder.Configuration.Bind(&quot;Local&quot;, options.ProviderOptions);
+});
+
+//await builder.Build().RunAsync();
+
+var loggerFactory = builder.Services.BuildServiceProvider().GetRequiredService&lt;ILoggerFactory&gt;();
+var logger = loggerFactory.CreateLogger&lt;Program&gt;();
+builder.Services.AddRgfBlazorWasmBearerServices(builder.Configuration, logger);
+
+var host = builder.Build();
+
+await host.Services.InitializeRgfBlazorAsync();
+await host.Services.InitializeRgfUIAsync();
+
+await host.RunAsync();
+</code></pre>
+<h2 id="init-router">Init Router</h2>
+<pre><code class="lang-razor">&lt;Router AppAssembly=&quot;@typeof(App).Assembly&quot; NotFoundPage=&quot;typeof(Pages.NotFound)&quot;
+        AdditionalAssemblies=&quot;new[] { typeof(Recrovit.RecroGridFramework.Client.Blazor.Components.RgfEntityComponent).Assembly }&quot;&gt;
+    &lt;Found Context=&quot;routeData&quot;&gt;
+        &lt;RouteView RouteData=&quot;@routeData&quot; DefaultLayout=&quot;@typeof(MainLayout)&quot; /&gt;
+        &lt;FocusOnNavigate RouteData=&quot;@routeData&quot; Selector=&quot;h1&quot; /&gt;
+    &lt;/Found&gt;
+&lt;/Router&gt;
+</code></pre>
+<h2 id="imports">Imports</h2>
+<p>Open ~/_Imports.razor file and import the RecroGrid Framework Blazor UI namespaces.</p>
+<pre><code class="lang-razor">@using Recrovit.RecroGridFramework.Client.Blazor.Parameters
+@using Recrovit.RecroGridFramework.Client.Blazor.UI
+@using Recrovit.RecroGridFramework.Client.Blazor.UI.Components
+</code></pre>
+<h2 id="mainlayout">MainLayout</h2>
+<p>Layout/MainLayout.razor</p>
+<pre><code class="lang-razor">@inherits LayoutComponentBase
+
+&lt;RgfRootComponent&gt;
+    &lt;header class=&quot;rgf-page-header&quot;&gt;
+        &lt;div class=&quot;rgf-navbar-host&quot;&gt;
+            &lt;NavbarComponent MenuParameters=&quot;@(new RgfMenuParameters() { MenuId = 10001 })&quot;
+                             NavbarBreakpoint=&quot;lg&quot;
+                             BrandText=&quot;RGF Demo App&quot;
+                             ShowThemeSelector=&quot;true&quot;
+                             ShowLanguageSelector=&quot;true&quot;&gt;
+                &lt;NavbarRightContent&gt;
+                    &lt;div class=&quot;login-display&quot;&gt;
+                        &lt;LoginDisplay /&gt;
+                    &lt;/div&gt;
+                &lt;/NavbarRightContent&gt;
+            &lt;/NavbarComponent&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;rgf-page-main&quot;&gt;
+        @Body
+    &lt;/main&gt;
+&lt;/RgfRootComponent&gt;
+</code></pre>
+<h2 id="api-access">API access</h2>
+<p>wwwroot/appsettings.json</p>
+<pre><code class="lang-json">&quot;Recrovit&quot;: {
+    &quot;RecroGridFramework&quot;: {
+      &quot;API&quot;: {
+        &quot;BaseAddress&quot;: &quot;https://{API-DOMAIN}&quot; //e.g. &quot;https://localhost:11913&quot; or &quot;http://api.example.com&quot;
+      }
+    }
+  }
+</code></pre>
+<p>Set the client address in the API's appsettings.json</p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="../components/recrosec/index.html">RecroSec</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="index.html">Get Started</a></li>
+<li><a href="api-app.html">ASP.NET Core Web API</a></li>
+<li><a href="../components/blazor.html">Blazor UI libraries</a></li>
+<li><a href="mvc-app.html">ASP.NET Core Web App MVC</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

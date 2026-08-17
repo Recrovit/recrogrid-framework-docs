@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Server-side Class | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Server-side Class | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="server-side-class">Server-side Class</h1>
+
+<p>A settings related to entities can be parameterized largely on the Admin dashboard; however, in the case of a real application, it is almost invariably necessary to include some additional code to achieve the functionality expected by the client. Such expectations may include, for example, validations on the data, custom display styles dependent on the data, other logging activities, communication with other modules or external applications, and numerous possible events that cannot be anticipated in advance by a framework. To handle these, it is necessary to create unique classes in the RecroGrid Framework, and additional or modifying code can be developed for various events or phases of automatic processes.</p>
+<h2 id="define">Define</h2>
+<p>The server-side class of the RecroGrid Framework is the generic class <code>RgfCore&lt;TEntity&gt;</code>, documented in the versioned <a href="../../../../api-reference/10.3.0/api/index.html">API Reference</a>, where the DbSet Entity class must be specified as the type parameter.</p>
+<pre><code class="lang-csharp">public partial class RG_Product : RgfCore&lt;Product&gt;
+{
+    public RG_Product(IRecroGridContext rgContext) : base(rgContext) { }
+}
+</code></pre>
+<p>Once the server-side class is created, in the Admin dashboard, under the RGF-Admin/Entities menu, you need to modify the name, type, and category of the previously generated Product Entity. Continuing with our previous example, this would look like the following</p>
+<ul>
+<li>Name: RG_Product</li>
+<li>TypeDefinition: RGF.Demo.Northwind.Entities.RG_Product, RGF.Demo.Northwind</li>
+<li>Category: CustomClass</li>
+</ul>
+<p>In the TypeDefinition, you need to provide the fully qualified name, including the assembly name. However, for the sake of simplicity and easier portability, you can simplify this using the following: - DefaultNamespace: The default namespace where DBModel is located - DefaultAssemblyName: The default assembly name where DBModel is located - EntryAssemblyName: Default application domain Based on these, you can simplify the previous example to: DefaultAssemblyName.Entities.RG_Product, DefaultAssemblyName</p>
+<p><img src="../shared/images/pictures/rgf.admin/rgproduct.png" alt=""></p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="form-designer.html">Form Designer</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="entity/index.html">Entity</a></li>
+<li><a href="../get-started/index.html">Get Started</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

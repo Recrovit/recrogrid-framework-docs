@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DistributedDownstreamUserTokenStore | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DistributedDownstreamUserTokenStore | RecroGrid Framework ">
+      
+      <meta name="description" content="Default distributed cache-backed authenticated session token store that encrypts a versioned session aggregate with ASP.NET Core Data Protection. This implementation is suitable for single-instance deployments unless the host replaces it with a store that provides cross-node atomic compare-and-swap guarantees.">
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/aspnetcore-authentication-openidconnect/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore">
+
+
+
+  <h1 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore" class="text-break">
+Class DistributedDownstreamUserTokenStore  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.AspNetCore.html">AspNetCore</a>.<a class="xref" href="Recrovit.AspNetCore.Authentication.html">Authentication</a>.<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.html">OpenIdConnect</a>.<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.html">Authentication</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.AspNetCore.Authentication.OpenIdConnect.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Default distributed cache-backed authenticated session token store that encrypts a versioned session aggregate with ASP.NET Core Data Protection.
+This implementation is suitable for single-instance deployments unless the host replaces it with a store that provides
+cross-node atomic compare-and-swap guarantees.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DistributedDownstreamUserTokenStore : IDownstreamUserTokenStore, IOidcSessionStateStore</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DistributedDownstreamUserTokenStore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.IDownstreamUserTokenStore.html">IDownstreamUserTokenStore</a></div>
+      <div><a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.IOidcSessionStateStore.html">IOidcSessionStateStore</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore__ctor_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.#ctor*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore__ctor_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_Microsoft_Extensions_Options_IOptions_Recrovit_AspNetCore_Authentication_OpenIdConnect_Configuration_TokenCacheOptions__Microsoft_Extensions_Options_IOptions_Recrovit_AspNetCore_Authentication_OpenIdConnect_Configuration_ActiveOidcProviderOptions__Microsoft_Extensions_Logging_ILogger_Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore__" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,Microsoft.Extensions.Options.IOptions{Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration.TokenCacheOptions},Microsoft.Extensions.Options.IOptions{Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration.ActiveOidcProviderOptions},Microsoft.Extensions.Logging.ILogger{Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore})">
+  DistributedDownstreamUserTokenStore(IDistributedCache, IDataProtectionProvider, IOptions&lt;TokenCacheOptions&gt;, IOptions&lt;ActiveOidcProviderOptions&gt;, ILogger&lt;DistributedDownstreamUserTokenStore&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.html">DistributedDownstreamUserTokenStore</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DistributedDownstreamUserTokenStore(IDistributedCache distributedCache, IDataProtectionProvider dataProtectionProvider, IOptions&lt;TokenCacheOptions&gt; tokenCacheOptions, IOptions&lt;ActiveOidcProviderOptions&gt; activeProviderOptions, ILogger&lt;DistributedDownstreamUserTokenStore&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distributedCache</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache">IDistributedCache</a></dt>
+    <dd></dd>
+    <dt><code>dataProtectionProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.dataprotection.idataprotectionprovider">IDataProtectionProvider</a></dt>
+    <dd></dd>
+    <dt><code>tokenCacheOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration.TokenCacheOptions.html">TokenCacheOptions</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>activeProviderOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Configuration.ActiveOidcProviderOptions.html">ActiveOidcProviderOptions</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.html">DistributedDownstreamUserTokenStore</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_DeleteSessionStateAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.DeleteSessionStateAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_DeleteSessionStateAsync_System_Security_Claims_ClaimsPrincipal_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.DeleteSessionStateAsync(System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)">
+  DeleteSessionStateAsync(ClaimsPrincipal, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the complete stored token state for the specified authenticated session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteSessionStateAsync(ClaimsPrincipal user, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetApiTokenAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetApiTokenAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetApiTokenAsync_System_Security_Claims_ClaimsPrincipal_System_String_System_Collections_Generic_IReadOnlyCollection_System_String__System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetApiTokenAsync(System.Security.Claims.ClaimsPrincipal,System.String,System.Collections.Generic.IReadOnlyCollection{System.String},System.Threading.CancellationToken)">
+  GetApiTokenAsync(ClaimsPrincipal, string, IReadOnlyCollection&lt;string&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the cached downstream API access token for the specified authenticated session and API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CachedDownstreamApiTokenEntry?&gt; GetApiTokenAsync(ClaimsPrincipal user, string downstreamApiName, IReadOnlyCollection&lt;string&gt; scopes, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd><p>The authenticated session principal whose token entry should be retrieved.</p>
+</dd>
+    <dt><code>downstreamApiName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The logical downstream API name.</p>
+</dd>
+    <dt><code>scopes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The normalized scope list used to request the token.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token for the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.CachedDownstreamApiTokenEntry.html">CachedDownstreamApiTokenEntry</a>&gt;</dt>
+    <dd><p>The cached downstream API token, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> when no entry is stored.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetSessionStateAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetSessionStateAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetSessionStateAsync_System_Security_Claims_ClaimsPrincipal_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetSessionStateAsync(System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)">
+  GetSessionStateAsync(ClaimsPrincipal, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the complete stored token state for the specified authenticated session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;VersionedOidcSessionState?&gt; GetSessionStateAsync(ClaimsPrincipal user, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.VersionedOidcSessionState.html">VersionedOidcSessionState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetSessionTokenSetAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetSessionTokenSetAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_GetSessionTokenSetAsync_System_Security_Claims_ClaimsPrincipal_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.GetSessionTokenSetAsync(System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)">
+  GetSessionTokenSetAsync(ClaimsPrincipal, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the stored OIDC session token set for the specified authenticated session from the encrypted token cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StoredOidcSessionTokenSet?&gt; GetSessionTokenSetAsync(ClaimsPrincipal user, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd><p>The authenticated session principal whose token entry should be retrieved.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token for the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.StoredOidcSessionTokenSet.html">StoredOidcSessionTokenSet</a>&gt;</dt>
+    <dd><p>The stored session token set, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> when no entry is stored for the authenticated session.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_RemoveAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.RemoveAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_RemoveAsync_System_Security_Claims_ClaimsPrincipal_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.RemoveAsync(System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)">
+  RemoveAsync(ClaimsPrincipal, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the stored encrypted token data for the specified authenticated session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveAsync(ClaimsPrincipal user, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd><p>The authenticated session principal whose token entry should be removed.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token for the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_StoreApiTokenAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.StoreApiTokenAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_StoreApiTokenAsync_System_Security_Claims_ClaimsPrincipal_System_String_System_Collections_Generic_IReadOnlyCollection_System_String__Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_CachedDownstreamApiTokenEntry_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.StoreApiTokenAsync(System.Security.Claims.ClaimsPrincipal,System.String,System.Collections.Generic.IReadOnlyCollection{System.String},Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.CachedDownstreamApiTokenEntry,System.Threading.CancellationToken)">
+  StoreApiTokenAsync(ClaimsPrincipal, string, IReadOnlyCollection&lt;string&gt;, CachedDownstreamApiTokenEntry, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a downstream API access token for the specified authenticated session and API in encrypted form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StoreApiTokenAsync(ClaimsPrincipal user, string downstreamApiName, IReadOnlyCollection&lt;string&gt; scopes, CachedDownstreamApiTokenEntry tokenEntry, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd><p>The authenticated session principal whose token entry should be stored.</p>
+</dd>
+    <dt><code>downstreamApiName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The logical downstream API name.</p>
+</dd>
+    <dt><code>scopes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The normalized scope list used to request the token.</p>
+</dd>
+    <dt><code>tokenEntry</code> <a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.CachedDownstreamApiTokenEntry.html">CachedDownstreamApiTokenEntry</a></dt>
+    <dd><p>The downstream API access token entry to persist.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token for the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_StoreSessionTokenSetAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.StoreSessionTokenSetAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_StoreSessionTokenSetAsync_System_Security_Claims_ClaimsPrincipal_Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_StoredOidcSessionTokenSet_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.StoreSessionTokenSetAsync(System.Security.Claims.ClaimsPrincipal,Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.StoredOidcSessionTokenSet,System.Threading.CancellationToken)">
+  StoreSessionTokenSetAsync(ClaimsPrincipal, StoredOidcSessionTokenSet, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores the OIDC session token set for the specified authenticated session in encrypted form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StoreSessionTokenSetAsync(ClaimsPrincipal user, StoredOidcSessionTokenSet tokenSet, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd><p>The authenticated session principal whose token entry should be stored.</p>
+</dd>
+    <dt><code>tokenSet</code> <a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.StoredOidcSessionTokenSet.html">StoredOidcSessionTokenSet</a></dt>
+    <dd><p>The token set to persist for the user.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token for the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_TryCompareAndSwapSessionStateAsync_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.TryCompareAndSwapSessionStateAsync*"></a>
+
+  <h3 id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_TryCompareAndSwapSessionStateAsync_System_Security_Claims_ClaimsPrincipal_System_String_Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_OidcSessionState_System_Threading_CancellationToken_" data-uid="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.DistributedDownstreamUserTokenStore.TryCompareAndSwapSessionStateAsync(System.Security.Claims.ClaimsPrincipal,System.String,Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.OidcSessionState,System.Threading.CancellationToken)">
+  TryCompareAndSwapSessionStateAsync(ClaimsPrincipal, string?, OidcSessionState, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/Recrovit.AspNetCore.Authentication.OpenIdConnect/blob/b078fee91b64ea9a2f34f20fe479d84ad49dd2f8/src/Authentication/DistributedDownstreamUserTokenStore.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to replace the complete stored token state when the stored concurrency version matches the expected value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TryCompareAndSwapSessionStateAsync(ClaimsPrincipal user, string? expectedVersion, OidcSessionState newState, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dd></dd>
+    <dt><code>expectedVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newState</code> <a class="xref" href="Recrovit.AspNetCore.Authentication.OpenIdConnect.Authentication.OidcSessionState.html">OidcSessionState</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_DistributedDownstreamUserTokenStore_TryCompareAndSwapSessionStateAsync_System_Security_Claims_ClaimsPrincipal_System_String_Recrovit_AspNetCore_Authentication_OpenIdConnect_Authentication_OidcSessionState_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>In <code>MultiInstance</code> deployments, implementations are expected to provide an atomic compare-and-swap operation
+across nodes. A read-then-write sequence backed only by best-effort cache semantics is not sufficient.</p>
+</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

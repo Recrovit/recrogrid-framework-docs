@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dictionaries | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dictionaries | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dictionaries">Dictionaries</h1>
+
+<p>Dictionaries can be used in the drop-down lists of the RecroGrid Framework's Form views, and the text to be displayed can also appear in the Grid view based on the key,allowing filtering. Various types of data sources can be configured to populate the dictionaries.</p>
+<!--Using Dictionaries in Form and Grid Views within the RecroGrid Framework-->
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/nUzVMoWhPrY?si=qC1a0MTfShJLNtCT&rel=0" frameborder="0" allowfullscreen="true"></iframe></div>
+<div class="alert alert-success alert-tip">
+<h5>Tip</h5>
+<p>If the selection is based on another entity where a large amount of data is present, it is recommended to use the built-in entity selection instead of a dictionary.</p>
+</div>
+<h2 id="native-sql">Native SQL</h2>
+<p>Direct native database query to determine dictionary data, directly for a Property in the RGO_DictionaryItems option setting.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>FormType: DropDown</li>
+<li>RGO_DictionaryItems: NSQL:select CategoryID, CategoryName from Categories order by 2</li>
+</ul>
+</div>
+<p>A dictionary entity with the type NSQL can be created.
+In this case, the dictionary can be used for multiple properties, for which the dictionary entity needs to be selected in the EntityBase.
+The entity definition is as follows.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>Name: CategoryDropdown</li>
+<li>TypeDefinition: select CategoryID, CategoryName from Categories order by 2</li>
+<li>Category: NSQL</li>
+</ul>
+</div>
+<h2 id="based-on-the-entity">Based on the entity</h2>
+<p>It is possible to define a dictionary based on an existing entity, which can be used for any property. The definition must be created within the entity itself using the RGO_DictionaryItems optional setting. In the definition, the key/value columns must be specified, and sorting can also be optionally provided.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: CategoryID,CategoryName,CategoryName</li>
+</ul>
+</div>
+<h2 id="static">Static</h2>
+<p>Defining a static dictionary for a field in a simple JSON format.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: {1:Static-Item1;2:Static-Item2;3:Static-Item3}</li>
+<li>RGO_Nullable: true</li>
+</ul>
+</div>
+<h2 id="recrodict---multilingual-dictionary">RecroDict - multilingual dictionary</h2>
+<p>Using the RecroDict dictionary based on Scope. The StringId is placed in the field, and the display text appears depending on the language used.
+If the key should also be used for the display text, it should be specified in the &lt;%%&gt;KK: format.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: &lt;%%&gt;DropdownRecroDict</li>
+<li>RGO_Nullable: true</li>
+</ul>
+</div>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>Scope: DropdownRecroDict, StringId: 1, Str_eng: RD-Item1</li>
+<li>Scope: DropdownRecroDict, StringId: 2, Str_eng: RD-Item2</li>
+<li>Scope: DropdownRecroDict, StringId: 3, Str_eng: RD-Item3</li>
+</ul>
+</div>
+<h2 id="enum">Enum</h2>
+<p>Using an <code>Enum</code>as a dictionary.
+The values of the <code>Enum</code> are placed in the field, and the display text corresponds to the textual representation of the <code>Enum</code>.
+It is also possible to define <code>DisplayAttribute</code> for the textual values.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: Enum:RGF.API.Entities.DropdownEnumTest, DefaultAssemblyName</li>
+<li>RGO_Nullable: true</li>
+</ul>
+</div>
+<p>The <code>Enum</code> value can be combined with the RecroDict dictionary, where the key is the <code>Enum</code> value and the display text is the value defined in the RecroDict.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: Enum&lt;%%&gt;DropdownRecroDict: RGF.API.Entities.DropdownEnumTest, DefaultAssemblyName</li>
+<li>RGO_Nullable: true</li>
+</ul>
+</div>
+<pre><code class="lang-csharp">public enum DropdownEnumTest
+{
+    [Display(Name = &quot;Enum Item1&quot;)]
+    EItem1 = 1,
+    [Display(Name = &quot;Enum Item2&quot;)]
+    EItem2 = 2,
+    [Display(Name = &quot;Enum Item3&quot;)]
+    EItem3 = 3
+}
+</code></pre>
+<p>A dictionary entity with the type <code>Enum</code> can be created.
+In this case, the dictionary can be used for multiple properties, for which the dictionary entity needs to be selected in the EntityBase.
+The entity definition is as follows.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>Name: DropdownEnumTest</li>
+<li>TypeDefinition: RGF.API.Entities.DropdownEnumTest, DefaultAssemblyName</li>
+<li>Category: Enum</li>
+</ul>
+</div>
+<h2 id="callback">Callback</h2>
+<p>A dictionary can also be defined using a function callback, where the function's return value is the dictionary.
+The function should be placed in the RecroGrid class or the Entity model class.</p>
+<div class="alert alert-secondary alert-highlight">
+<h5>SECONDARY</h5>
+<ul>
+<li>RGO_DictionaryItems: Callback:DropdownCallbackTest</li>
+<li>RGO_Nullable: true</li>
+</ul>
+</div>
+<pre><code class="lang-csharp">public static List&lt;KeyValuePair&lt;string, string&gt;&gt; DropdownCallbackTest(RGDictionaryCallbackParam arg)
+{
+    return
+    [
+        new (&quot;1&quot;, &quot;CB Item1&quot;),
+        new (&quot;2&quot;, &quot;CB Item2&quot;),
+        new (&quot;3&quot;, &quot;CB Item3&quot;),
+    ];
+}
+</code></pre>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="filtering.html">Filtering</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="entity/index.html">Entity</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgfPermissions | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgfPermissions | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/abstraction/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions" class="text-break">
+Class RgfPermissions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Abstraction.html">Abstraction</a>.<a class="xref" href="Recrovit.RecroGridFramework.Abstraction.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.html">Security</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Abstraction.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgfPermissions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RgfPermissions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor">
+  RgfPermissions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfPermissions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor(Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions)">
+  RgfPermissions(RgfPermissions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfPermissions(RgfPermissions permissions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissions</code> <a class="xref" href="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.html">RgfPermissions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor(System.Boolean)">
+  RgfPermissions(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfPermissions(bool fullPermission = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPermission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions__ctor_System_String_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.#ctor(System.String)">
+  RgfPermissions(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfPermissions(string CRUD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>CRUD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_BasePermissions_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.BasePermissions*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_BasePermissions" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.BasePermissions">
+  BasePermissions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public BasePermissions BasePermissions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.BasePermissions.html">BasePermissions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_CRUD_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.CRUD*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_CRUD" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.CRUD">
+  CRUD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string CRUD { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_IsFullPermission_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.IsFullPermission*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_IsFullPermission" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.IsFullPermission">
+  IsFullPermission
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonInclude]
+public bool IsFullPermission { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Permissions_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Permissions*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Permissions" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Permissions">
+  Permissions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonInclude]
+public Dictionary&lt;int, bool&gt; Permissions { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_System_Enum_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add(System.Enum,System.Boolean)">
+  Add(Enum, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(Enum type, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_System_Int32_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add(System.Int32,System.Boolean)">
+  Add(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(int permissionId, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_Add_System_String_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.Add(System.String,System.Boolean)">
+  Add(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string permissionName, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace(Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions)">
+  AddOrReplace(RgfPermissions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrReplace(RgfPermissions permissions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissions</code> <a class="xref" href="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.html">RgfPermissions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_System_Enum_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace(System.Enum,System.Boolean)">
+  AddOrReplace(Enum, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrReplace(Enum type, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_System_Int32_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace(System.Int32,System.Boolean)">
+  AddOrReplace(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrReplace(int permissionId, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_AddOrReplace_System_String_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.AddOrReplace(System.String,System.Boolean)">
+  AddOrReplace(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrReplace(string permissionName, bool permission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>permission</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetEnumerator_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetEnumerator*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetEnumerator" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;int, bool&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_System_Enum_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission(System.Enum)">
+  GetPermission(Enum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPermission(Enum type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_System_Int32_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission(System.Int32)">
+  GetPermission(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPermission(int permissionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermission_System_String_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermission(System.String)">
+  GetPermission(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPermission(string permissionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermissionId_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermissionId*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermissionId_System_String_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermissionId(System.String)">
+  GetPermissionId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPermissionId(string permissionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>permissionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermissions_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermissions*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_GetPermissions_System_String_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.GetPermissions(System.String)">
+  GetPermissions(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPermissions(string sCRUD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sCRUD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_SetMaxCRUD_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.SetMaxCRUD*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RgfPermissions_SetMaxCRUD_System_String_" data-uid="Recrovit.RecroGridFramework.Abstraction.Infrastructure.Security.RgfPermissions.SetMaxCRUD(System.String)">
+  SetMaxCRUD(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/Security/RgfPermission.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SetMaxCRUD(string maxCRUD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxCRUD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

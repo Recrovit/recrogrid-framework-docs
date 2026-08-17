@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Architecture and Technologies | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Architecture and Technologies | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="architecture-and-technologies">Architecture and Technologies</h1>
+
+<h2 id="technology-background">Technology Background</h2>
+<p>The RecroGrid Framework is built on an integrated technology environment optimized for developing professional applications. Its architecture is based on the .NET ecosystem, providing a unified, efficient, and stable development platform through C#, Visual Studio, Entity Framework, and Blazor WebAssembly. These technologies enable seamless cooperation between data logic, server-side APIs, and interactive client-side user interfaces. The Visual Studio IDE is fully leveraged within RecroGrid Framework, making the development process highly transparent and effective. C# ensures a consistent language environment across client and server logic. The system's minimal external dependencies also make it easy to maintain and stable in the long term.</p>
+<h2 id="component-structure">Component Structure</h2>
+<p>The RecroGrid Framework uses a unique, domain model-based component structure, where business entities defined by the developer automatically determine the application's structure. This domain model forms the unified foundation for the database layer, business logic, and client-side interfaces. Thanks to Entity Framework, these models are directly mapped to the database schema. The resulting components-such as grids, forms, and APIs-are fully functional out of the box and generated at runtime based on the domain model without boilerplate code. At the same time, they are deeply customizable at the code level.</p>
+<h2 id="services-and-modules">Services and Modules</h2>
+<p>The RecroGrid Framework offers a wide range of integrated services that ensure smooth operation of business applications. These services are modular, consistently integrated, and easily configurable at runtime-for example, authentication, auditing, or authorization rules. The system automatically generates API endpoints needed for client-server communication and user interface components. These services include authentication modules (OIDC), permission handling, and detailed auditing features, all securely and seamlessly integrated. Each of these modules can be quickly and easily customized at runtime.</p>
+<h2 id="unified-operation-architecture">Unified Operation Architecture</h2>
+<p>One of the RecroGrid Framework's most important features is its unified operation architecture based on the tight collaboration of client and server. Both Blazor WebAssembly on the client side and ASP.NET Core on the server side use the same domain model and technological foundations, ensuring full consistency in data and behavior. Data serialization, communication, and error handling are implemented uniformly, ensuring reliable and efficient operation. Client and server code share a common base, so business rules, validations, and logic are consistently applied across all application layers. This significantly simplifies maintenance and development by using high-level abstractions, runtime configuration, and intelligent framework-level interpretation-without relying on boilerplate code generation.</p>
+<h2 id="separation-and-extensibility-of-client-server-layers">Separation and Extensibility of Client-Server Layers</h2>
+<p>A key advantage of the RecroGrid Framework is that its client-server integration is maintained through a multi-level abstraction layer. This enables full flexibility and replaceability of the client-side layer while preserving consistent operation and data management.</p>
+<p>The client-side architecture is composed of three interdependent layers:</p>
+<ul>
+<li>Client logic and communication layer – technology-agnostic base services and API handling</li>
+<li>Blazor abstraction layer – Blazor-specific components required for operation</li>
+<li>Presentation layer – concrete UI implementation using the default Bootstrap or other component libraries</li>
+</ul>
+<p>Additionally, the RecroGrid Framework includes packages that integrate third-party component libraries such as DevExpress, Radzen, Syncfusion, and Telerik. Thanks to the abstraction layer, no custom client code is needed for these-integration works out of the box.</p>
+<p>It is worth noting that beyond these implementations, additional UI layers can easily be created, including fully custom solutions. The architecture of the RecroGrid Framework fully supports this, ensuring long-term adaptability regardless of the frontend solution used. This architecture offers unified integration, stable backend access, and flexible frontend choices-without sacrificing the ability to replace or extend the visual layer. This flexibility ensures that RecroGrid Framework provides a unified, integrated experience while allowing development to continue within any preferred or enterprise-specific frontend environment.</p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="../components/listview/index.html">List View</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="index.html">Common Concepts</a></li>
+<li><a href="rgf-vs-component-libraries.html">RGF vs Component Libraries</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

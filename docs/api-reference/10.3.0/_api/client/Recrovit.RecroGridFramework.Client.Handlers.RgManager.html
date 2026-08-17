@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgManager | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgManager | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager" class="text-break">
+Class RgManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.html">Handlers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgManager : IRgManager, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RgManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgManager.html">IRgManager</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgManagerExtensions.html#Recrovit_RecroGridFramework_Client_Handlers_IRgManagerExtensions_GetSelectedRowsData_Recrovit_RecroGridFramework_Client_Handlers_IRgManager_">IRgManagerExtensions.GetSelectedRowsData(IRgManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgManagerExtensions.html#Recrovit_RecroGridFramework_Client_Handlers_IRgManagerExtensions_ValidFormKeyExists_Recrovit_RecroGridFramework_Client_Handlers_IRgManager_">IRgManagerExtensions.ValidFormKeyExists(IRgManager)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager__ctor_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfSessionParams_System_IServiceProvider_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.#ctor(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfSessionParams,System.IServiceProvider)">
+  RgManager(RgfSessionParams, IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgManager(RgfSessionParams param, IServiceProvider serviceProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfSessionParams.html">RgfSessionParams</a></dt>
+    <dd></dd>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ActivePage_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ActivePage*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ActivePage" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ActivePage">
+  ActivePage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableProperty&lt;int&gt; ActivePage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.ObservableProperty-1.html">ObservableProperty</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_EntityDesc_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.EntityDesc*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_EntityDesc" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.EntityDesc">
+  EntityDesc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfEntity EntityDesc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfEntity.html">RgfEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_FormViewKey_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.FormViewKey*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_FormViewKey" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.FormViewKey">
+  FormViewKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableProperty&lt;FormViewKey?&gt; FormViewKey { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.ObservableProperty-1.html">ObservableProperty</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Models.FormViewKey.html">FormViewKey</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GridSettingList_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GridSettingList*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GridSettingList" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GridSettingList">
+  GridSettingList
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RgfGridSetting&gt; GridSettingList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfGridSettings.cs">RgfGridSetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_IsFiltered_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.IsFiltered*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_IsFiltered" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.IsFiltered">
+  IsFiltered
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFiltered { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ItemCount_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ItemCount*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ItemCount" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ItemCount">
+  ItemCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableProperty&lt;int&gt; ItemCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.ObservableProperty-1.html">ObservableProperty</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ListHandler_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ListHandler*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ListHandler" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ListHandler">
+  ListHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgListHandler ListHandler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgListHandler.html">IRgListHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_NotificationManager_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.NotificationManager*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_NotificationManager" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.NotificationManager">
+  NotificationManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgfNotificationManager NotificationManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfNotificationManager.html">IRgfNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_PageSize_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.PageSize*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_PageSize" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.PageSize">
+  PageSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableProperty&lt;int&gt; PageSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.ObservableProperty-1.html">ObservableProperty</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SelectParam_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SelectParam*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SelectParam" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SelectParam">
+  SelectParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfSelectParam? SelectParam { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfSelectParam.html">RgfSelectParam</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SelectedItems_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SelectedItems*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SelectedItems" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SelectedItems">
+  SelectedItems
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableProperty&lt;Dictionary&lt;int, RgfEntityKey&gt;&gt; SelectedItems { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.ObservableProperty-1.html">ObservableProperty</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfEntity.cs">RgfEntityKey</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ServiceProvider_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ServiceProvider*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ServiceProvider" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ServiceProvider">
+  ServiceProvider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceProvider ServiceProvider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SessionParams_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SessionParams*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SessionParams" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SessionParams">
+  SessionParams
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfSessionParams SessionParams { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfSessionParams.html">RgfSessionParams</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ToastManager_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ToastManager*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_ToastManager" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.ToastManager">
+  ToastManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgfNotificationManager ToastManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfNotificationManager.html">IRgfNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_AboutAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.AboutAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_AboutAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.AboutAsync">
+  AboutAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; AboutAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_BroadcastMessages_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.BroadcastMessages*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_BroadcastMessages_Recrovit_RecroGridFramework_Abstraction_Models_RgfCoreMessages_System_Object_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.BroadcastMessages(Recrovit.RecroGridFramework.Abstraction.Models.RgfCoreMessages,System.Object,System.Boolean)">
+  BroadcastMessages(RgfCoreMessages, object, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BroadcastMessages(RgfCoreMessages messages, object sender, bool clearAfterBroadcast = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfCoreMessages.html">RgfCoreMessages</a></dt>
+    <dd></dd>
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>clearAfterBroadcast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CallCustomFunctionAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CallCustomFunctionAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CallCustomFunctionAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CallCustomFunctionAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  CallCustomFunctionAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfCustomFunctionResult&gt;&gt; CallCustomFunctionAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfCustomFunctionResult.cs">RgfCustomFunctionResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CreateFormHandler_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CreateFormHandler*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CreateFormHandler" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CreateFormHandler">
+  CreateFormHandler()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRgFormHandler CreateFormHandler()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgFormHandler.html">IRgFormHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CreateGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CreateGridRequest*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CreateGridRequest_System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CreateGridRequest(System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest})">
+  CreateGridRequest(Action&lt;RgfGridRequest&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfGridRequest CreateGridRequest(Action&lt;RgfGridRequest&gt;? create = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>create</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfGridRequest.cs">RgfGridRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteChartSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteChartSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteChartSettingsAsync_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteChartSettingsAsync(System.Int32)">
+  DeleteChartSettingsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteChartSettingsAsync(int chartSettingsId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chartSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteDataAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteDataAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteDataAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfEntityKey_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteDataAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfEntityKey)">
+  DeleteDataAsync(RgfEntityKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RgfResult&lt;RgfFormResult&gt;&gt; DeleteDataAsync(RgfEntityKey entityKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityKey</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfEntityKey.html">RgfEntityKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfFormResult.cs">RgfFormResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteFilterSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteFilterSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteFilterSettingsAsync_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteFilterSettingsAsync(System.Int32)">
+  DeleteFilterSettingsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteFilterSettingsAsync(int filterSettingsId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteGridSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteGridSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteGridSettingsAsync_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteGridSettingsAsync(System.Int32)">
+  DeleteGridSettingsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteGridSettingsAsync(int gridSettingsId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteSelectedItemsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteSelectedItemsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_DeleteSelectedItemsAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.DeleteSelectedItemsAsync">
+  DeleteSelectedItemsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; DeleteSelectedItemsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_Dispose_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.Dispose*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_Dispose" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetAggregateDataAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetAggregateDataAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetAggregateDataAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetAggregateDataAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  GetAggregateDataAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfGridResult&gt;&gt; GetAggregateDataAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfGridResult.cs">RgfGridResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetChartSettingsListAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetChartSettingsListAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetChartSettingsListAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetChartSettingsListAsync">
+  GetChartSettingsListAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;RgfChartSettings&gt;&gt; GetChartSettingsListAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfChartSettings.cs">RgfChartSettings</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetEntityDescAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetEntityDescAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetEntityDescAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetEntityDescAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  GetEntityDescAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfEntity&gt;&gt; GetEntityDescAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfEntity.cs">RgfEntity</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetFilterHandlerAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetFilterHandlerAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetFilterHandlerAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetFilterHandlerAsync">
+  GetFilterHandlerAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IRgFilterHandler&gt; GetFilterHandlerAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.html">IRgFilterHandler</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetFormAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetFormAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetFormAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetFormAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  GetFormAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfFormResult&gt;&gt; GetFormAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfFormResult.cs">RgfFormResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetPropertyTooltipsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetPropertyTooltipsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetPropertyTooltipsAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetPropertyTooltipsAsync">
+  GetPropertyTooltipsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfPropertyTooltips&gt; GetPropertyTooltipsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfPropertyTooltips.cs">RgfPropertyTooltips</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetRecroGridAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetRecroGridAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetRecroGridAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetRecroGridAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  GetRecroGridAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfGridResult&gt;&gt; GetRecroGridAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfGridResult.cs">RgfGridResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetResourceAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetResourceAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_GetResourceAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.GetResourceAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  GetResourceAsync&lt;ResultType&gt;(string, Dictionary&lt;string, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ResultType&gt; GetResourceAsync&lt;ResultType&gt;(string name, Dictionary&lt;string, string&gt; query) where ResultType : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>query</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;ResultType&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ResultType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_InitFilterHandlerAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.InitFilterHandlerAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_InitFilterHandlerAsync_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.InitFilterHandlerAsync(System.String)">
+  InitFilterHandlerAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InitFilterHandlerAsync(string condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_InitializeAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.InitializeAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_InitializeAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.InitializeAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  InitializeAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; InitializeAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_IsColumnFiltered_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.IsColumnFiltered*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_IsColumnFiltered_Recrovit_RecroGridFramework_Abstraction_Models_IRgfProperty_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.IsColumnFiltered(Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty,System.String)">
+  IsColumnFiltered(IRgfProperty, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColumnFiltered(IRgfProperty property, string? matchCriteria = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty.html">IRgfProperty</a></dt>
+    <dd></dd>
+    <dt><code>matchCriteria</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_OnSelect_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.OnSelect*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_OnSelect" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.OnSelect">
+  OnSelect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnSelect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_OnToolbarCommandAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.OnToolbarCommandAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_OnToolbarCommandAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs_Recrovit_RecroGridFramework_Client_Events_RgfToolbarEventArgs__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.OnToolbarCommandAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{Recrovit.RecroGridFramework.Client.Events.RgfToolbarEventArgs})">
+  OnToolbarCommandAsync(IRgfEventArgs&lt;RgfToolbarEventArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnToolbarCommandAsync(IRgfEventArgs&lt;RgfToolbarEventArgs&gt; arg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Events.RgfToolbarEventArgs.html">RgfToolbarEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_RecreateAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.RecreateAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_RecreateAsync" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.RecreateAsync">
+  RecreateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RecreateAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveChartSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveChartSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveChartSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfChartSettings_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveChartSettingsAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfChartSettings,System.Boolean)">
+  SaveChartSettingsAsync(RgfChartSettings, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfChartSettings?&gt; SaveChartSettingsAsync(RgfChartSettings settings, bool recreate = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settings</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfChartSettings.html">RgfChartSettings</a></dt>
+    <dd></dd>
+    <dt><code>recreate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfChartSettings.cs">RgfChartSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveFilterSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveFilterSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveFilterSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilterSettings_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveFilterSettingsAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings)">
+  SaveFilterSettingsAsync(RgfFilterSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RgfResult&lt;RgfFilterSetting&gt;&gt; SaveFilterSettingsAsync(RgfFilterSettings filterSettings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettings</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings.html">RgfFilterSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilterSettings.cs">RgfFilterSetting</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveGridSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveGridSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_SaveGridSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfGridSettings_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.SaveGridSettingsAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfGridSettings,System.Boolean)">
+  SaveGridSettingsAsync(RgfGridSettings, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RgfGridSetting?&gt; SaveGridSettingsAsync(RgfGridSettings settings, bool recreate = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settings</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfGridSettings.html">RgfGridSettings</a></dt>
+    <dd></dd>
+    <dt><code>recreate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfGridSettings.cs">RgfGridSetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_UpdateFormDataAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.UpdateFormDataAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_UpdateFormDataAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.UpdateFormDataAsync(Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest)">
+  UpdateFormDataAsync(RgfGridRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RgfResult&lt;RgfFormResult&gt;&gt; UpdateFormDataAsync(RgfGridRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.API.RgfGridRequest.html">RgfGridRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfResult.cs">RgfResult</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/API/RgfFormResult.cs">RgfFormResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_CreateGridRequestCreated" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.CreateGridRequestCreated">
+  CreateGridRequestCreated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CreateGridRequestEventArgs&gt;? CreateGridRequestCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Events.CreateGridRequestEventArgs.html">CreateGridRequestEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_RgManager_RefreshEntity" data-uid="Recrovit.RecroGridFramework.Client.Handlers.RgManager.RefreshEntity">
+  RefreshEntity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; RefreshEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

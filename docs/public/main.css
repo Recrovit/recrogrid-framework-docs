@@ -1,0 +1,199 @@
+.rgf-docs-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.98), rgba(226, 232, 240, 0.92));
+}
+
+.rgf-docs-toolbar__nav,
+.rgf-docs-toolbar__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.rgf-docs-toolbar__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+    .rgf-docs-toolbar__link.is-active {
+        color: #fff;
+        background: #0f4c81;
+    }
+
+.rgf-docs-toolbar__select {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.rgf-docs-toolbar__label {
+    font-weight: 600;
+}
+
+.rgf-docs-toolbar__select select {
+    min-height: 2.4rem;
+    padding: 0.45rem 2rem 0.45rem 0.75rem;
+    border: 1px solid rgba(15, 23, 42, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #0f172a;
+}
+
+
+.affix.is-empty {
+    display: none !important;
+}
+
+.alert-highlight > h5:first-child {
+    display: none;
+}
+
+.alert-highlight > :first-child:not(h5) {
+    margin-top: 0;
+}
+
+.alert-highlight > :last-child {
+    margin-bottom: 0;
+}
+
+.alert-tip h5::before {
+    content: "\f46b";
+}
+
+.rgf-repository-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 1rem 0;
+}
+
+.rgf-repository-link img {
+    height: 32px;
+    width: auto;
+    flex: 0 0 auto;
+}
+
+.rgf-repository-link a {
+    min-width: 0;
+    word-break: break-word;
+}
+
+/* API reference landing page cards */
+.api-reference-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 2rem;
+}
+
+.api-reference-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    min-height: 100%;
+    padding: 1.4rem;
+    color: inherit;
+    text-decoration: none;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
+    border: 1px solid #d7dfeb;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(30, 55, 90, 0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.api-reference-card:hover,
+.api-reference-card:focus {
+    color: inherit;
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: #7da2d6;
+    box-shadow: 0 18px 38px rgba(30, 55, 90, 0.14);
+}
+
+.api-reference-card__eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5f7794;
+}
+
+.api-reference-card__title {
+    font-size: 1.08rem;
+    line-height: 1.4;
+    color: #17324d;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.api-reference-card__description {
+    flex: 1 1 auto;
+    line-height: 1.6;
+    color: #3d536b;
+}
+
+.api-reference-card__cta {
+    font-weight: 700;
+    color: #0d5aa7;
+}
+
+/*div.embeddedvideo {
+    width: 560px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    padding-top: 0;
+    margin-inline: auto;
+}*/
+
+div.embeddedvideo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .rgf-docs-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rgf-docs-toolbar__nav,
+    .rgf-docs-toolbar__controls {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 640px) {
+    .api-reference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rgf-docs-toolbar__nav,
+    .rgf-docs-toolbar__controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rgf-docs-toolbar__select {
+        justify-content: space-between;
+    }
+}

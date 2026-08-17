@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Authentication | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Authentication | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="authentication">Authentication</h1>
+
+<h2 id="openid-connect">OpenID Connect</h2>
+<div class="alert alert-warning alert-highlight">
+<h5>HIGHLIGHT</h5>
+<p>The following description outlines the necessary configurations for the OIDC-enabled RecroGrid Framework Core API and Blazor client operation.</p>
+</div>
+<h3 id="oidc-settings-for-the-api">OIDC settings for the API</h3>
+<p>Install the JwtBearer package using .NET CLI or Package Manager</p>
+<pre><code class="lang-powershell">dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+</code></pre>
+<pre><code class="lang-powershell">Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
+</code></pre>
+<p>Program.cs</p>
+<p>Configuration examples for Microsoft Entra ID (Azure Active Directory) and Duende (Identity Server)</p>
+<p>appsettings.json</p>
+<pre><code class="lang-json">&quot;JwtBearerOptions&quot;: { //Microsoft Entra ID
+        &quot;Authority&quot;: &quot;https://login.microsoftonline.com/{TENANT ID}/v2.0&quot;,
+        &quot;Audience&quot;: &quot;{Application (CLIENT) ID}&quot;, //API Application ID
+        &quot;TokenValidationParameters&quot;: {
+          &quot;ValidTypes&quot;: [ &quot;JWT&quot; ]
+        }
+      }
+</code></pre>
+<pre><code class="lang-json">&quot;JwtBearerOptions&quot;: { //Duende
+        &quot;Authority&quot;: &quot;{DUENDE}&quot;, //e.g. https://localhost:11900
+        &quot;Audience&quot;: &quot;{API-RESOURCE}&quot;, //e.g. api://RgfDemo.Api
+        &quot;TokenValidationParameters&quot;: {
+          &quot;ValidTypes&quot;: [ &quot;at+jwt&quot; ]
+        }
+      }
+</code></pre>
+<pre><code class="lang-json">&quot;Recrovit&quot;: {
+      &quot;RecroGridFramework&quot;: {
+        &quot;DefaultMenuScope&quot;: &quot;;identity;&quot;
+      },
+      &quot;RecroSec&quot;: {
+        &quot;Enabled&quot;: true, //If it is true, every object must be parameterized; otherwise, parameters can be configured in the entity's RGO_RecroSec
+        &quot;SingleUserMode&quot;: true, //After configuring the administrator, it should be set to false.
+        &quot;AutoCreateUser&quot;: true,
+        &quot;AdministratorRoleName&quot;: &quot;RGF.Administrators&quot;,
+        &quot;DefaultRoleName&quot;: &quot;RGF.Users&quot;
+      }
+    }
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>After configuring the administrator, the SingleUserMode should be set to false.</p>
+</div>
+<h3 id="oidc-settings-for-blazor-webassembly">OIDC settings for Blazor WebAssembly</h3>
+<p>If the Individual Accounts authentication type was not set during the creation of the application, you need to add the Microsoft.AspNetCore.Components.WebAssembly.Authentication NuGet package to the project and perform all related configurations.</p>
+<p>Program.cs</p>
+<p>Configuration examples for Microsoft Entra ID (Azure Active Directory) and Duende (Identity Server)</p>
+<p>appsettings.json</p>
+<pre><code class="lang-json">&quot;Oidc&quot;: { //Microsoft Entra ID
+        &quot;ProviderOptions&quot;: {
+          &quot;Authority&quot;: &quot;https://login.microsoftonline.com/{TENANT ID}/v2.0&quot;,
+          &quot;ClientId&quot;: &quot;{Application (client) ID}&quot;, //Client Application ID
+          //&quot;RedirectUri&quot;: &quot;{CLIENT-LOGIN-CALLBACK}&quot;, //e.g. https://localhost:11920/authentication/login-callback
+          //&quot;PostLogoutRedirectUri&quot;: &quot;{CLIENT-LOGOUT-CALLBACK}&quot;,
+          &quot;ResponseType&quot;: &quot;code&quot;,
+          &quot;DefaultScopes&quot;: [ &quot;openid&quot;, &quot;profile&quot; ]
+        },
+        &quot;UserOptions&quot;: {
+          &quot;RoleClaim&quot;: &quot;roles&quot;
+        }
+      }
+</code></pre>
+<pre><code class="lang-json">&quot;Oidc&quot;: { //Duende
+        &quot;ProviderOptions&quot;: {
+          &quot;Authority&quot;: &quot;{DUENDE}&quot;, //e.g. https://localhost:11900
+          &quot;ClientId&quot;: &quot;{CLIENT-ID}&quot;, //e.g. RgfDemo.Client
+          &quot;RedirectUri&quot;: &quot;{CLIENT-LOGIN-CALLBACK}&quot;, //e.g. https://localhost:11920/authentication/login-callback
+          //&quot;PostLogoutRedirectUri&quot;: &quot;{CLIENT-LOGOUT-CALLBACK}&quot;,
+          &quot;ResponseType&quot;: &quot;code&quot;,
+          &quot;DefaultScopes&quot;: [ &quot;openid&quot;, &quot;profile&quot;, &quot;role&quot; ]
+        },
+        &quot;UserOptions&quot;: {
+          &quot;RoleClaim&quot;: &quot;role&quot;
+        }
+      }
+</code></pre>
+<pre><code class="lang-json">&quot;Recrovit&quot;: {
+      &quot;RecroGridFramework&quot;: {
+        &quot;API&quot;: {
+          &quot;BaseAddress&quot;: &quot;https://{API-DOMAIN}&quot;, //e.g. &quot;https://localhost:11913&quot; or &quot;http://api.example.com&quot;,
+          &quot;DefaultScopes&quot;: [ &quot;openid&quot;, &quot;profile&quot;, &quot;{API-SCOPE}&quot; ] //e.g. API-SCOPE = api://RgfDemo.Api/API.Access 
+        }
+      }
+    }
+</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../get-started/index.html">Get Started</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

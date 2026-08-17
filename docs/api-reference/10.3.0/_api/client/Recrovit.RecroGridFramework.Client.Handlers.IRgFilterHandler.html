@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRgFilterHandler | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRgFilterHandler | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler" class="text-break">
+Interface IRgFilterHandler  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.html">Handlers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRgFilterHandler</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_Conditions_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.Conditions*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_Conditions" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.Conditions">
+  Conditions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;RgfFilter.Condition&gt; Conditions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_PredefinedFilters_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.PredefinedFilters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_PredefinedFilters" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.PredefinedFilters">
+  PredefinedFilters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;RgfFilterSettings&gt; PredefinedFilters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilterSettings.cs">RgfFilterSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RgfFilterProperties_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RgfFilterProperties*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RgfFilterProperties" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RgfFilterProperties">
+  RgfFilterProperties
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RgfFilterProperty[] RgfFilterProperties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Handlers.RgfFilterProperty.html">RgfFilterProperty</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_AddBracket_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.AddBracket*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_AddBracket_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.AddBracket(System.Int32)">
+  AddBracket(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddBracket(int clientId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_AddCondition_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.AddCondition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_AddCondition_Microsoft_Extensions_Logging_ILogger_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.AddCondition(Microsoft.Extensions.Logging.ILogger,System.Int32)">
+  AddCondition(ILogger, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RgfFilter.Condition? AddCondition(ILogger logger, int clientId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ApplyFilterState_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ApplyFilterState*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ApplyFilterState_System_Collections_Generic_IEnumerable_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition__System_Nullable_System_Int32__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ApplyFilterState(System.Collections.Generic.IEnumerable{Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition},System.Nullable{System.Int32})">
+  ApplyFilterState(IEnumerable&lt;Condition&gt;?, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ApplyFilterState(IEnumerable&lt;RgfFilter.Condition&gt;? conditions, int? sqlTimeout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>sqlTimeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ChangeProperty_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ChangeProperty*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ChangeProperty_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ChangeProperty(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition,System.Int32)">
+  ChangeProperty(Condition, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeProperty(RgfFilter.Condition condition, int newPropertyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+    <dt><code>newPropertyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ChangeQueryOperator_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ChangeQueryOperator*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ChangeQueryOperator_Microsoft_Extensions_Logging_ILogger_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_QueryOperator_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ChangeQueryOperator(Microsoft.Extensions.Logging.ILogger,Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition,Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.QueryOperator)">
+  ChangeQueryOperator(ILogger, Condition, QueryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeQueryOperator(ILogger logger, RgfFilter.Condition condition, RgfFilter.QueryOperator newOperator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+    <dt><code>newOperator</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">QueryOperator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_DeleteFilterSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.DeleteFilterSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_DeleteFilterSettingsAsync_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.DeleteFilterSettingsAsync(System.Int32)">
+  DeleteFilterSettingsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DeleteFilterSettingsAsync(int filterSettingsId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_FindCondition_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.FindCondition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_FindCondition_System_Collections_Generic_IList_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition__System_Int32_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.FindCondition(System.Collections.Generic.IList{Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition},System.Int32,Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition@)">
+  FindCondition(IList&lt;Condition&gt;, int, out Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindCondition(IList&lt;RgfFilter.Condition&gt; conditions, int clientId, out RgfFilter.Condition condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_InitFilter_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.InitFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_InitFilter_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.InitFilter(System.String)">
+  InitFilter(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool InitFilter(string? jsonCondition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jsonCondition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_IsColumnFiltered_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.IsColumnFiltered*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_IsColumnFiltered_Recrovit_RecroGridFramework_Abstraction_Models_IRgfProperty_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.IsColumnFiltered(Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty,System.String)">
+  IsColumnFiltered(IRgfProperty, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsColumnFiltered(IRgfProperty property, string? matchCriteria = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty.html">IRgfProperty</a></dt>
+    <dd></dd>
+    <dt><code>matchCriteria</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RemoveBracket_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RemoveBracket*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RemoveBracket_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RemoveBracket(System.Int32)">
+  RemoveBracket(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveBracket(int clientId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RemoveCondition_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RemoveCondition*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_RemoveCondition_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.RemoveCondition(System.Int32)">
+  RemoveCondition(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveCondition(int clientId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ResetFilter_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ResetFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_ResetFilter" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.ResetFilter">
+  ResetFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ResetFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SaveFilterSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SaveFilterSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SaveFilterSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilterSettings_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SaveFilterSettingsAsync(Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings)">
+  SaveFilterSettingsAsync(RgfFilterSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveFilterSettingsAsync(RgfFilterSettings filterSettings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettings</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings.html">RgfFilterSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SelectPredefinedFilter_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SelectPredefinedFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SelectPredefinedFilter_System_Nullable_System_Int32__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SelectPredefinedFilter(System.Nullable{System.Int32})">
+  SelectPredefinedFilter(int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RgfFilterSettings? SelectPredefinedFilter(int? filterSettingsId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfFilterSettings.html">RgfFilterSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SetFilterAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SetFilterAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SetFilterAsync_System_Collections_Generic_IEnumerable_Recrovit_RecroGridFramework_Abstraction_Models_RgfFilter_Condition__System_Nullable_System_Int32__" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SetFilterAsync(System.Collections.Generic.IEnumerable{Recrovit.RecroGridFramework.Abstraction.Models.RgfFilter.Condition},System.Nullable{System.Int32})">
+  SetFilterAsync(IEnumerable&lt;Condition&gt;?, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetFilterAsync(IEnumerable&lt;RgfFilter.Condition&gt;? conditions, int? sqlTimeout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">RgfFilter</a>.<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>sqlTimeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SetQuickFilterAsync_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SetQuickFilterAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_SetQuickFilterAsync_Recrovit_RecroGridFramework_Abstraction_Models_IRgfProperty_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.SetQuickFilterAsync(Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty,System.Object)">
+  SetQuickFilterAsync(IRgfProperty, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetQuickFilterAsync(IRgfProperty property, object? condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.IRgfProperty.html">IRgfProperty</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_StoreFilter_" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.StoreFilter*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Handlers_IRgFilterHandler_StoreFilter" data-uid="Recrovit.RecroGridFramework.Client.Handlers.IRgFilterHandler.StoreFilter">
+  StoreFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Handlers/RgFilterHandler.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RgfFilter.Condition[] StoreFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfFilter.cs">Condition</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

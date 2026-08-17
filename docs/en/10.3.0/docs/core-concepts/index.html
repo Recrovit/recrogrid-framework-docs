@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Common Concepts | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Common Concepts | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="common-concepts">Common Concepts</h1>
+
+<h2 id="domain-model-and-its-role">Domain Model and Its Role</h2>
+<p>The foundation of the RecroGrid Framework is the domain model, which describes the business objects (entities) of the application, their properties, and relationships. This model defines the data structure and serves as the starting point for the business logic. The framework automatically builds the other layers of the application based on the domain model, so by precisely defining the entities, the foundation of the entire system is already laid. Thanks to this, developers only need to focus on assembling the domain model, while the framework's intelligent mechanisms take care of the necessary components in the background.</p>
+<p>The central role of the domain model ensures that business logic and data structures can be treated as a unified whole. A single, well-defined model is valid across multiple levels of the application:</p>
+<ul>
+<li>Database Layer: The classes of the domain model can be directly mapped to the database structure, as the system uses Entity Framework to ensure consistency between objects and the relational database. Based on the developer-defined entities, the database structure can be easily created or modified. Changes to the data structure only need to be made in the models, and the persistence layer adapts accordingly.</li>
+<li>Business Logic: The entity classes represent real-world business concepts and allow the integration of business rules and validations. For example, marking a field as required in the model class is sufficient-the framework will enforce this rule both in the database and on the user interface.</li>
+<li>User Interface: The framework generates display components (views) based on the entities defined in the domain model. For each entity, maintenance interfaces are automatically created-forms for data entry and grid views for browsing-complete with fields and controls that match the entity properties. This ensures that the UI structure reflects the defined data structure, guaranteeing consistency between data and presentation.</li>
+</ul>
+<p>The domain model alone initiates the automated generation of components: as soon as the business entities are defined, the RecroGrid Framework recognizes and utilizes these definitions at runtime to build the necessary parts of the application. With a well-structured domain model, the framework automatically creates default forms, lists, data handling functions, and communication (API) layers for each entity. This approach ensures that every part of the application is based on a shared model-data, business logic, and the interface are realized in perfect sync and without duplication. As a result, developers can focus on refining the business logic instead of writing repetitive boilerplate code, while the framework backbone is already in place based on the domain model.</p>
+<h2 id="runtime-automation-in-action">Runtime Automation in Action</h2>
+<p>One of the most innovative capabilities of the RecroGrid Framework is its dynamic runtime automation. The framework implements a high-level abstraction layer that ensures even minimal developer input results in a fully functional application. At runtime, the system automatically assembles all the visual and logical components that the developer does not need to implement manually. Based on the entities described in the domain model and the related configuration, RecroGrid intelligently creates the fundamental building blocks of the application, including the following:</p>
+<ul>
+<li>Forms and data grid views: Interactive forms for entering and editing data, and tabular list views for reviewing records-each generated with fields, controls, and essential functionality (search, filter, sort) aligned to the entity properties.</li>
+<li>Data handling logic and sources: Logical components and data bindings are automatically created in the background (such as Entity Framework context operations), which handle data storage, querying, and processing based on business rules. The framework generates the essential data-handling logic, enabling fully functional data management without requiring a separate custom code layer.</li>
+<li>API endpoints: The web service interfaces needed for client-server communication are automatically generated. Basic API operations (query, create, update, delete, etc.) are available for each entity and can be consumed by client-side components. Developers do not need to manually create each endpoint, as the framework provides them upon application startup.</li>
+</ul>
+<p>The default components generated at runtime are immediately ready to use, so even in the early stages of development, a functional application is available. RecroGrid Framework's intelligent automation saves a great deal of time-tasks that traditionally take hours, such as creating a new data handling interface or API, are generated automatically. As a result, development time during the first year of active development can be reduced by up to 50–80%, as the framework assumes responsibility for the majority of repetitive infrastructure-level tasks. In subsequent years, development effort remains significantly lower due to the unified architecture, runtime automation, and the consistently reduced volume of boilerplate code. Developers can focus solely on unique requirements, while RecroGrid provides a working foundation for everything else.</p>
+<p>It is important to highlight that runtime automated generation results in a robust yet flexible system. The default behavior produced this way can always be refined or overridden to meet specific needs, but even the initial state is well-designed and ready for use. This architecture ensures that development can remain focused on solving business problems, while the framework handles application structure in the background. The result is a stable, well-functioning, automatically constructed application that can be customized as needed-achieved in significantly less time than with traditional methods.</p>
+<h2 id="client-server-integration">Client-Server Integration</h2>
+<p>The RecroGrid Framework unifies the client and server into a single platform by tightly integrating .NET technologies on both sides. The framework utilizes the modern, cross-platform .NET ecosystem, ensuring that the same language and environment support the entire application. The integration of key components and technologies is as follows:</p>
+<ul>
+<li>ASP.NET Core (C#) – The foundation of the server-side logic and web API layer. The RecroGrid Framework uses the proven ASP.NET Core platform for HTTP-based services and business operations.</li>
+<li>Blazor WebAssembly (C#) – The client-side user interface technology. The Blazor WebAssembly application runs in the browser, enabling a full front-end experience using C# and .NET, offering an interactive, SPA-like experience.</li>
+<li>Entity Framework – The ORM tool for object-relational mapping. Aligned with the domain model, Entity Framework handles database operations, allowing the framework to automatically manage data saving, querying, and transaction handling in the .NET environment.</li>
+</ul>
+<p>This technological ensemble ensures consistent, synchronized operation between client and server. Since both the client-side and server-side logic are written in C#, the same domain classes and data structures are used on both sides. This means no complex data mapping or duplicated classes are necessary-the shared models and contracts guarantee data consistency and easier maintenance. For example, an entity definition is created once (as part of the domain model), and this same definition is used by both the server logic and the client-side code powering the interface. This ensures that all business rules and data structure elements are interpreted identically both in the browser and on the server.</p>
+<p>Client-server communication in RecroGrid Framework is also pre-designed and integrated. The framework automatically generates and publishes the API endpoints through which the Blazor WebAssembly client accesses server functionality. These standardized HTTP-based services can be directly used by the client-side components to query and modify data. For the developer, this process is transparent-no need to write a separate communication layer, as domain-aligned API calls are readily available. Consequently, data transfer between client and server is secure, strongly typed, and efficient. The framework manages serialization, call authorization, and error handling to ensure highly reliable integration.</p>
+<p>Another advantage of client-server integration is that behavioral logic is synchronized on both ends. Developers can optionally share logic between the front-end and back-end (such as data validation or calculations), or rely on the fact that server-side business logic is consistently enforced during client operations. For instance, when a user attempts to modify data, business rules and permission checks are applied on the server, and their results are relayed to the client-providing immediate feedback to the user. This process is seamless due to the shared .NET foundation: the client handles responses as part of the same framework used by the server logic. In this way, the RecroGrid Framework creates a unified ecosystem in which front-end and back-end work together tightly and integrally. This not only simplifies development-since one language and toolset are used-but also stabilizes and secures operations by reducing integration errors and inconsistencies between layers.</p>
+<h2 id="application-model-logic">Application Model Logic</h2>
+<p>The application model of the RecroGrid Framework defines how the system behaves and appears-both from a developer and operator perspective. This model integrates all the settings and configurations based on the domain model, enabling the framework to assemble the application at runtime. The RecroGrid Framework offers a metadata-driven application model: many aspects of functionality and appearance are defined as configuration data that the framework interprets and applies. As a result, the system's behavior is not hard-coded but can be flexibly adjusted without rewriting the stable foundations.</p>
+<p>One of the core principles of the RecroGrid Framework is the ability to configure behavior and appearance at runtime. Thanks to its architecture, many configuration tasks have shifted from the developer level to the administrator level. This means that certain changes-given appropriate permissions-can be made on a running system without programming. Whether adjusting the layout of a form, fine-tuning field display options, or introducing new authorization rules, these modifications can be performed using the administrative tools of the RecroGrid Framework without deploying a new version. Changes take effect immediately, offering unparalleled flexibility in application customization. This capability significantly accelerates change implementation and reduces the long-term maintenance costs of the application, as many adjustments no longer require a full development cycle.</p>
+<p>Within the application model logic, a clear distinction is made between developer-level and operator-level settings, ensuring both system stability and flexibility.</p>
+<ul>
+<li><strong>Developer Configuration and Customization</strong> At the developer level, the fundamental structures and behaviors are defined. This includes designing the domain model, optionally parameterizing the generation of default components, and implementing any custom logic. The RecroGrid Framework is designed so that the entire default behavior can be customized at code level: virtually any component-be it a UI element, a data-handling process, or a service endpoint-can be overridden or extended if necessary. Developers can intervene at well-defined entry points such as event handlers, virtual methods, or extensible services, allowing even the most complex custom requirements to be implemented precisely. All of this is achieved using standard .NET technologies, meaning that developers work with familiar C# tools and patterns rather than having to learn special scripting languages or narrowly supported APIs. The purpose of developer configuration is to ensure that if deviations from the default behavior are needed, they can be made in a controlled and clean-code manner.</li>
+<li><strong>Operational (Runtime) Configuration</strong> The framework allows certain settings to be modified at runtime using operational tools, without developer intervention. Through the integrated configuration console, administrators can fine-tune the application: customize form layouts (e.g., grouping fields, toggling visibility, setting default values), adjust grid view column settings, save filter conditions, and define permission and behavioral rules. All of these changes can be performed without programming or recompilation, even in a live system. Runtime configuration settings are typically stored in a database or configuration files, which the framework continuously takes into account during operation. As a result, the enterprise application can easily adapt to changing requirements: many new requests or adjustments can be implemented instantly through simple settings. Operational customizations ensure that the system can be finely tuned in production environments-user feedback or business process changes can be addressed quickly, without relying on developer resources for every small change.</li>
+</ul>
+<p>These two levels-developer and operator-complement each other harmoniously within the application model. Critical, in-depth modifications remain under developer control, while minor, frequently needed adjustments are managed by administrators. This way, the system is both stable and flexible: structural integrity is ensured by well-structured code, while surface-level configurations can be flexibly adapted to daily needs. This structure greatly contributes to long-term maintainability.</p>
+<p>The RecroGrid Framework minimizes external dependencies, relying instead on widely supported technologies rather than proprietary solutions. As a result, custom developments built on the application model are easily maintainable and can be adapted with minimal effort during version upgrades or environment changes. Business logic and application code are largely independent from the internal implementation of the framework, enabling a high degree of code reusability-the code written by developers can be used in other .NET-based projects as well, and applications created with the RecroGrid Framework can be easily enhanced over time. Overall, this application model logic ensures that solutions built with RecroGrid remain flexible, adaptable, and maintainable over the long term. The architecture supports continuous evolution: new business needs can be met quickly, while stability of existing functionality is preserved. This combination-the speed of development, the flexibility of configuration, and the emphasis on clean code-makes the RecroGrid Framework application model uniquely effective and future-proof in enterprise software development.</p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="rgf-vs-component-libraries.html">RGF vs Component Libraries</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../system-features.html">Features</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

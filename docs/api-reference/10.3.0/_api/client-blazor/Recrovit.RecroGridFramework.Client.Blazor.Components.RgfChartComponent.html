@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgfChartComponent | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgfChartComponent | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client-blazor/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent" class="text-break">
+Class RgfChartComponent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.html">Blazor</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.Blazor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgfChartComponent : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></div>
+      <div><span class="xref">RgfChartComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">IComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent">IHandleEvent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender">IHandleAfterRender</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized">ComponentBase.OnInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset">ComponentBase.OnParametersSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync">ComponentBase.OnParametersSetAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged">ComponentBase.StateHasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender">ComponentBase.ShouldRender()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">ComponentBase.OnAfterRender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)">ComponentBase.InvokeAsync(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.dispatchexceptionasync">ComponentBase.DispatchExceptionAsync(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync">ComponentBase.SetParametersAsync(ParameterView)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.rendererinfo">ComponentBase.RendererInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assets">ComponentBase.Assets</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.assignedrendermode">ComponentBase.AssignedRenderMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent__ctor" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.#ctor">
+  RgfChartComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfChartComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AllowedProperties_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AllowedProperties*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AllowedProperties" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AllowedProperties">
+  AllowedProperties
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RgfProperty&gt; AllowedProperties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfProperty.cs">RgfProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartColumnsNumeric_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartColumnsNumeric*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartColumnsNumeric" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartColumnsNumeric">
+  ChartColumnsNumeric
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, string&gt; ChartColumnsNumeric { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartData_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartData*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartData" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartData">
+  ChartData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RgfDynamicDictionary&gt; ChartData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfDynamicDictionary.cs">RgfDynamicDictionary</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartDataGrid_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartDataGrid*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartDataGrid" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartDataGrid">
+  ChartDataGrid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderFragment? ChartDataGrid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartSettingList_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartSettingList*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartSettingList" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartSettingList">
+  ChartSettingList
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RgfChartSettings&gt; ChartSettingList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfChartSettings.cs">RgfChartSettings</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartSettings_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartSettings*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartSettings" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartSettings">
+  ChartSettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfChartSettings ChartSettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfChartSettings.html">RgfChartSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartStatus_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartStatus*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ChartStatus" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ChartStatus">
+  ChartStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfProcessingStatus ChartStatus { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfProcessingStatus.html">RgfProcessingStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ContentTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ContentTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ContentTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ContentTemplate">
+  ContentTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfChartComponent&gt; ContentTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.html">RgfChartComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DataColumns_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DataColumns*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DataColumns" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DataColumns">
+  DataColumns
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RgfDynamicDictionary&gt; DataColumns { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Models/RgfDynamicDictionary.cs">RgfDynamicDictionary</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DataStatus_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DataStatus*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DataStatus" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DataStatus">
+  DataStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfProcessingStatus DataStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfProcessingStatus.html">RgfProcessingStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_EditContext_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.EditContext*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_EditContext" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.EditContext">
+  EditContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditContext EditContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.editcontext">EditContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Embedded_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Embedded*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Embedded" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Embedded">
+  Embedded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+public bool Embedded { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_EntityParameters_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.EntityParameters*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_EntityParameters" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.EntityParameters">
+  EntityParameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RgfEntityParameters EntityParameters { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfEntityParameters.html">RgfEntityParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_FooterTemplate_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.FooterTemplate*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_FooterTemplate" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.FooterTemplate">
+  FooterTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter]
+[EditorRequired]
+public RenderFragment&lt;RgfChartComponent&gt; FooterTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1">RenderFragment</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.html">RgfChartComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_IsPublicChartSettingAllowed_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.IsPublicChartSettingAllowed*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_IsPublicChartSettingAllowed" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.IsPublicChartSettingAllowed">
+  IsPublicChartSettingAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPublicChartSettingAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_MessageStore_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.MessageStore*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_MessageStore" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.MessageStore">
+  MessageStore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationMessageStore MessageStore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.validationmessagestore">ValidationMessageStore</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddColumn_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddColumn*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddColumn" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddColumn">
+  AddColumn()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddColumn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddGroup_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddGroup*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddGroup" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddGroup">
+  AddGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddSubGroup_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddSubGroup*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_AddSubGroup" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.AddSubGroup">
+  AddSubGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSubGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_BuildRenderTree_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.BuildRenderTree*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+  BuildRenderTree(RenderTreeBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the component to the supplied <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BuildRenderTree(RenderTreeBuilder __builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ConsumePendingParentRefresh_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ConsumePendingParentRefresh*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_ConsumePendingParentRefresh" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.ConsumePendingParentRefresh">
+  ConsumePendingParentRefresh()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsumePendingParentRefresh()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_CreateCardModel_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.CreateCardModel*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_CreateCardModel" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.CreateCardModel">
+  CreateCardModel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfChartCardModel? CreateCardModel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Parameters.RgfChartCardModel.html">RgfChartCardModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_CreateChartDataAsyc_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.CreateChartDataAsyc*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_CreateChartDataAsyc" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.CreateChartDataAsyc">
+  CreateChartDataAsyc()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; CreateChartDataAsyc()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DeleteChartSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DeleteChartSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_DeleteChartSettingsAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.DeleteChartSettingsAsync">
+  DeleteChartSettingsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteChartSettingsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Dispose_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Dispose*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Dispose" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetAllowedAggregationColumns_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetAllowedAggregationColumns*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetAllowedAggregationColumns_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetAllowedAggregationColumns(System.String)">
+  GetAllowedAggregationColumns(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, string&gt; GetAllowedAggregationColumns(string? aggregate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aggregate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetColumnSortState_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetColumnSortState*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetColumnSortState_Recrovit_RecroGridFramework_Abstraction_Models_RgfAggregationColumn_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetColumnSortState(Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn)">
+  GetColumnSortState(RgfAggregationColumn)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfChartComponent.RgfAggregationSortState GetColumnSortState(RgfAggregationColumn column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn.html">RgfAggregationColumn</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.html">RgfChartComponent</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RgfAggregationSortState.html">RgfAggregationSortState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetRecroDictChart_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetRecroDictChart*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_GetRecroDictChart_System_String_System_String_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.GetRecroDictChart(System.String,System.String)">
+  GetRecroDictChart(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRecroDictChart(string resourceKey, string? defaultValue = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resourceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_HandleValidationRequested_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.HandleValidationRequested*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_HandleValidationRequested_System_Object_Microsoft_AspNetCore_Components_Forms_ValidationRequestedEventArgs_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.HandleValidationRequested(System.Object,Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs)">
+  HandleValidationRequested(object?, ValidationRequestedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void HandleValidationRequested(object? sender, ValidationRequestedEventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.validationrequestedeventargs">ValidationRequestedEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnAfterRenderAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnAfterRenderAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnAfterRenderAsync_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnAfterRenderAsync(System.Boolean)">
+  OnAfterRenderAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered interactively and the UI has finished
+updating (for example, after elements have been added to the browser DOM). Any <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a>
+fields will be populated by the time this runs.</p>
+<p>This method is not invoked during prerendering or server-side rendering, because those processes
+are not attached to any live browser DOM and are already complete before the DOM is updated.</p>
+<p>Note that the component does not automatically re-render after the completion of any returned <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>,
+because that would cause an infinite render loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnAfterRenderAsync(bool firstRender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstRender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to <code>true</code> if this is the first time <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">OnAfterRender(bool)</a> has been invoked
+on this component instance; otherwise <code>false</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing any asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnAfterRenderAsync_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender">OnAfterRender(bool)</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync">OnAfterRenderAsync(bool)</a> lifecycle methods
+are useful for performing interop, or interacting with values received from <code>@ref</code>.
+Use the <code class="paramref">firstRender</code> parameter to ensure that initialization work is only performed
+once.</p>
+</div>
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnClose_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnClose*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnClose_Microsoft_AspNetCore_Components_Web_MouseEventArgs_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnClose(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
+  OnClose(MouseEventArgs?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnClose(MouseEventArgs? args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.web.mouseeventargs">MouseEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnDeleteChartSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnDeleteChartSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnDeleteChartSettingsAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnDeleteChartSettingsAsync">
+  OnDeleteChartSettingsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDeleteChartSettingsAsync()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnInitializedAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnInitializedAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnInitializedAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnInitializedAsync">
+  OnInitializedAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method invoked when the component is ready to start, having received its
+initial parameters from its parent in the render tree.</p>
+<p>Override this method if you will perform an asynchronous operation and
+want the component to refresh when that operation is completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnInitializedAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing any asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnSetChartSettingAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnSetChartSettingAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_OnSetChartSettingAsync_System_Nullable_System_Int32__System_String_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.OnSetChartSettingAsync(System.Nullable{System.Int32},System.String)">
+  OnSetChartSettingAsync(int?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; OnSetChartSettingAsync(int? chartSettingsId, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chartSettingsId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveAtGroup_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveAtGroup*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveAtGroup_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveAtGroup(System.Int32)">
+  RemoveAtGroup(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAtGroup(int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveAtSubGroup_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveAtSubGroup*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveAtSubGroup_System_Int32_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveAtSubGroup(System.Int32)">
+  RemoveAtSubGroup(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAtSubGroup(int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveColumn_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveColumn*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_RemoveColumn_Recrovit_RecroGridFramework_Abstraction_Models_RgfAggregationColumn_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.RemoveColumn(Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn)">
+  RemoveColumn(RgfAggregationColumn)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveColumn(RgfAggregationColumn column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn.html">RgfAggregationColumn</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SaveChartSettingsAsync_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SaveChartSettingsAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SaveChartSettingsAsync" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SaveChartSettingsAsync">
+  SaveChartSettingsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SaveChartSettingsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetColumnSortDescending_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetColumnSortDescending*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetColumnSortDescending_Recrovit_RecroGridFramework_Abstraction_Models_RgfAggregationColumn_System_Boolean_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetColumnSortDescending(Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn,System.Boolean)">
+  SetColumnSortDescending(RgfAggregationColumn, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnSortDescending(RgfAggregationColumn column, bool descending)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn.html">RgfAggregationColumn</a></dt>
+    <dd></dd>
+    <dt><code>descending</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetColumnSortPriority_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetColumnSortPriority*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetColumnSortPriority_Recrovit_RecroGridFramework_Abstraction_Models_RgfAggregationColumn_System_Nullable_System_Int32__" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetColumnSortPriority(Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn,System.Nullable{System.Int32})">
+  SetColumnSortPriority(RgfAggregationColumn, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnSortPriority(RgfAggregationColumn column, int? priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfAggregationColumn.html">RgfAggregationColumn</a></dt>
+    <dd></dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetDataStatus_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetDataStatus*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_SetDataStatus_Recrovit_RecroGridFramework_Abstraction_Models_RgfProcessingStatus_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.SetDataStatus(Recrovit.RecroGridFramework.Abstraction.Models.RgfProcessingStatus)">
+  SetDataStatus(RgfProcessingStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataStatus(RgfProcessingStatus status)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>status</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfProcessingStatus.html">RgfProcessingStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Validation_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Validation*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Blazor_Components_RgfChartComponent_Validation_Microsoft_AspNetCore_Components_Forms_ValidationMessageStore_Recrovit_RecroGridFramework_Abstraction_Models_RgfChartSettings_" data-uid="Recrovit.RecroGridFramework.Client.Blazor.Components.RgfChartComponent.Validation(Microsoft.AspNetCore.Components.Forms.ValidationMessageStore,Recrovit.RecroGridFramework.Abstraction.Models.RgfChartSettings)">
+  Validation(ValidationMessageStore, RgfChartSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client.Blazor/Components/RgfChartComponent.razor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validation(ValidationMessageStore messageStore, RgfChartSettings rgfChartSettings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messageStore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.validationmessagestore">ValidationMessageStore</a></dt>
+    <dd></dd>
+    <dt><code>rgfChartSettings</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Models.RgfChartSettings.html">RgfChartSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

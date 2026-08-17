@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Features | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Features | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="features">Features</h1>
+
+<p>The functionalities of the RecroGrid Framework are realized through a coherent, unified architecture where every capability is organically connected to the central application model. Visual components, data logic, communication layers, and operational features are all built upon a shared technological and abstraction foundation. As a result, every function is immediately operational as part of a stable, scalable system from the outset, while also offering full customization capabilities for the most demanding business needs.</p>
+<ul>
+<li><p><strong>Automatic Visual and Logical Components</strong></p>
+<p>The RecroGrid Framework can dynamically generate the complete data management interface at runtime based on the domain model – including interactive grids, forms, and API endpoints. These elements are fully functional and provide complete features without requiring template code.</p>
+</li>
+<li><p><strong>Automatic Handling of Entity Relationships in Forms and Backend Layers</strong></p>
+<p>The RecroGrid Framework automatically identifies and interprets entity relationships (such as 1:N or N:1) and renders the related data appropriately in Form views. Associated lists or selectors are generated instantly, and the framework ensures all necessary backend logic is in place – including data querying, API communication, and persistence.</p>
+</li>
+<li><p><strong>Advanced, Comprehensive Filtering System</strong></p>
+<p>The built-in filtering engine enables flexible and detailed data filtering in any list view. It supports multi-column, logically bracketed conditions, filtering based on external tables, strongly typed controls (e.g. date pickers, dropdowns, checkboxes), and custom logic (e.g. native SQL). Filters can be saved, reloaded, and made available either per user or globally.</p>
+</li>
+<li><p><strong>User-Defined, Named Views with Shareable Settings</strong></p>
+<p>Users can create and save any number of personalized views, each with a custom name. A view includes current column settings, filters, and sorting preferences. These views can be reloaded individually or assigned to user groups, making them accessible to all members – all at runtime, without programming.</p>
+</li>
+<li><p><strong>Full Multilingual Support and Dynamic Dictionary Management</strong></p>
+<p>The built-in RecroDict module enables language-independent definition of any textual content – including column headers, form labels, button texts, and error messages – at runtime. Users can switch languages during application usage, with the entire UI updating immediately. Adding new languages requires no code changes, making the framework highly flexible and scalable for multilingual business environments. The dictionary applies across all components, including server- and client-side logic.</p>
+</li>
+<li><p><strong>Detailed, Searchable Data Change Tracking</strong></p>
+<p>Using the RecroTrack module, the system automatically records all data changes (creation, modification, deletion) to entities, along with who made the change and when. The audit trail is stored in a structured database and can be displayed in an interactive grid, just like any dataset. Authorized users can search or review the full change history of any entity – without requiring custom queries or developer-side intervention. Tracking is enabled automatically for permitted entities, and custom events or operations (e.g. launching a business process) can also be logged via optional development. This provides transparency and allows monitoring of business events in a structured, integrated manner.</p>
+</li>
+<li><p><strong>Intelligent and Flexible Permission Management</strong></p>
+<p>RecroGrid Framework natively supports OIDC-based user authentication, allowing seamless integration with external identity providers (e.g. Microsoft Entra ID – formerly Azure Active Directory). Upon login, the system automatically identifies the user, while group memberships and permissions are managed within the application using the RecroSec module. Permissions can be configured with high granularity at both entity and field level, defining exactly what each user or group can see or edit. These rules are consistently enforced across all layers of the application. Authorization logic is configurable at runtime without code, but can also be fully extended or overridden at code level if needed. This flexibility ensures the system can precisely align with even the most complex security and business requirements.</p>
+</li>
+<li><p><strong>Flexible Visual Layer Abstraction – UI Library Integration</strong></p>
+<p>The RecroGrid Framework’s client-side rendering is based on a multi-layered abstraction structure that enables seamless integration of various UI component libraries. This abstraction ensures consistent behavior and logic regardless of visual implementation. By default, the UI layer uses Blazor WebAssembly and Bootstrap, providing a modern, ready-to-use frontend. Developers can also integrate entirely custom UI layers, while the RecroGrid Framework automatically handles all background logic.</p>
+</li>
+<li><p><strong>Full Server- and Client-Side Customizability</strong></p>
+<p>Each component includes a well-structured, default behavior that can be widely configured at runtime. Simultaneously, every part of the system can be extended or overridden at code level – using C# and the familiar .NET toolset. This makes the RecroGrid Framework ideal for implementing complex business applications with full developer control and precision-level customization. This flexibility ensures accurate implementation of unique business logic, long-term maintainability, and extended software lifecycles – all on a robust, well-organized architecture.</p>
+</li>
+<li><p><strong>Administrative and Configuration Tools for Development and Operation</strong></p>
+<p>The RecroGrid Framework provides a comprehensive toolset for both developers and administrators, enabling quick setup, customization, and maintenance – often without writing code. The built-in WYSIWYG form editor allows visual configuration of fields, layouts, and groupings, while the menu system can also be edited graphically and linked to access rights. Developer tools – such as structure previews, SQL inspection, and data export – support deeper understanding, efficient debugging, and smooth integration work. In-line documentation assists both developers and administrators during configuration.</p>
+</li>
+<li><p><strong>Charting and Aggregated Reporting Based on Filters</strong></p>
+<p>The RecroGrid Framework allows the creation of charts and tabular summaries based on filtered data. Users can define which fields to group by (including multilevel grouping) and choose aggregation methods (e.g. count, sum, average). The results are displayed both graphically and in tables, and both formats can be exported for further use or sharing.</p>
+</li>
+<li><p><strong>Schemora – AI-Powered Domain Model and Project Structure Generation</strong></p>
+<p>Schemora is a powerful AI-driven service that automatically generates a well-structured, production-ready project foundation for applications built on the RecroGrid Framework. Using either natural language descriptions or predefined data structures, it creates a complete Entity Framework-based domain model and sets up four essential projects: the data model, data access layer, API project, and Blazor WebAssembly client interface. The generated solution is fully functional and includes complete RecroGrid Framework integration and configuration - allowing developers to immediately focus on implementing advanced business logic.</p>
+</li>
+</ul>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="core-concepts/index.html">Common Concepts</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="introduction.html">Introduction</a></li>
+<li><a href="get-started/index.html">Get Started</a></li>
+<li><a href="release-notes/index.html">Release notes</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

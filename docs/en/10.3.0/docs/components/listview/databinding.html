@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Data Binding | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Data Binding | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="data-binding">Data Binding</h1>
+
+<p>This chapter describes the data-binding logic of the RecroGrid Framework List View, focusing on how a database model becomes a runtime-flexible entity that supports multiple views and behaviors, and how query results flow through to the client-side List View rendering.</p>
+<h2 id="overview-list-view-data-binding-logic">Overview: List View Data-Binding Logic</h2>
+<p>List View data binding is built on the integrated model of the RecroGrid Framework:</p>
+<ul>
+<li>The database structure and relation graph are represented in the domain model through Entity Framework</li>
+<li>Entity configurations and their metadata are derived from the domain model and persisted in the RecroGrid Framework database</li>
+<li>The List View initiates a query associated with the entity’s current context, then receives the result in a runtime record structure</li>
+<li>The client generates columns from the received runtime-aligned record structure, based on the entity settings</li>
+</ul>
+<h2 id="domain-model-database-and-entity-metadata">Domain Model, Database, and Entity Metadata</h2>
+<h3 id="1-database-model-and-domain-model-synchronization">1. Database Model and Domain Model Synchronization</h3>
+<p>The starting point is the Entity Framework model available through the DbContext. It provides a unified description of tables, fields, and navigation relations, serving as the foundation for how the RecroGrid Framework derives entities and metadata from the model. The Entity Framework model available in the DbContext provides the following inputs for the RecroGrid Framework:</p>
+<ul>
+<li>Fields, Types, Nullability, Required semantics</li>
+<li>Keys, Indexes, References</li>
+<li>Navigation properties</li>
+</ul>
+<p>Based on the domain model, the RecroGrid Framework handles server-side querying and client-side List View behavior in a unified way.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In addition to the DbContext-based model, the RecroGrid Framework supports data source-independent entity definitions. Details are available in the <a href="../../how-to/entity/independent-entities.html">Data Source-Independent Entities</a> chapter.</p>
+</div>
+<h3 id="2-entity-configurations-and-metadata">2. Entity Configurations and Metadata</h3>
+<p>In the RecroGrid Framework, the concept of an entity is treated as an application capability: an entity is not merely a mapping of a table, but a descriptive unit that also includes view-relevant metadata, such as:</p>
+<ul>
+<li>Logical field set (Fields, Relation-based fields, Calculated fields)</li>
+<li>Default column set and order</li>
+<li>Filterability and sortability characteristics</li>
+<li>Display types and formatting recommendations</li>
+<li>Related entities and navigation paths</li>
+</ul>
+<h2 id="multiple-entities-for-the-same-database-table">Multiple Entities for the Same Database Table</h2>
+<p>The RecroGrid Framework allows any number of entity views to be associated with database tables and their navigation relations.</p>
+<h3 id="1-variants-and-roles">1. Variants and Roles</h3>
+<p>The same underlying structure can appear as multiple entity variants:</p>
+<ul>
+<li>Different field sets</li>
+<li>Different relation traversal</li>
+<li>Different calculated and additional data</li>
+<li>Different behaviors and rules</li>
+</ul>
+<p>This model enables the same database table to provide an optimal view representation across multiple business contexts and workflows.</p>
+<h3 id="2-a-single-entity-can-compose-multiple-data-sources">2. A Single Entity Can Compose Multiple Data Sources</h3>
+<p>Entity metadata can include columns and values that do not originate directly from table columns, for example:</p>
+<ul>
+<li>Calculated values</li>
+<li>Aggregated, grouped, or derived fields</li>
+<li>Specialized relation-based extractions</li>
+</ul>
+<h2 id="runtime-data-structure-for-list-view-data-binding">Runtime Data Structure for List View Data Binding</h2>
+<h3 id="1-runtime-aligned-record-structure">1. Runtime-Aligned Record Structure</h3>
+<p>List View queries return a runtime-generated, metadata-aligned record structure, where each row reflects the effective entity configuration and query projection of the current context.</p>
+<ul>
+<li>The column identifier (Field name, Relation path, Calculated field name)</li>
+<li>The value is the cell value produced by the current query</li>
+</ul>
+<p>This has the following implications for List View behavior:</p>
+<ul>
+<li>The column set is derived from the query and the current entity configuration</li>
+<li>Column presence is part of the runtime query context</li>
+<li>Client-side rendering constructs the List View representation from the received column metadata and the runtime-aligned record structure.</li>
+</ul>
+<h3 id="2-separation-of-column-definition-and-row-content">2. Separation of Column Definition and Row Content</h3>
+<p>The List View logic naturally separates binding into two layers:</p>
+<ul>
+<li>Column metadata: Label, Type, Formatting, Sortability, Filterability, Display behavior</li>
+<li>Row values: Actual values mapped to the metadata-aligned runtime record keys</li>
+</ul>
+<p>This structure supports immediate rendering of the same entity with different List View configurations and different column sets.</p>
+<h2 id="query-pipeline-and-data-flow">Query Pipeline and Data Flow</h2>
+<h3 id="1-client-side-state-and-query-parameters">1. Client-Side State and Query Parameters</h3>
+<p>On the client, the List View maintains a view state that typically includes:</p>
+<ul>
+<li>Current column set and order</li>
+<li>Sorting rules</li>
+<li>Active filter conditions</li>
+<li>Paging settings</li>
+</ul>
+<p>This state is sent to the server in a structured format and determines the final shape of the query.</p>
+<h3 id="2-server-side-query-composition">2. Server-Side Query Composition</h3>
+<p>On the server side, the RecroGrid Framework composes the query based on the domain model and entity metadata:</p>
+<ul>
+<li>Selecting the base dataset and required relation traversals</li>
+<li>Projecting selected fields and calculated fields</li>
+<li>Applying sorting and filtering rules</li>
+<li>Applying paging</li>
+</ul>
+<p>The query result is produced in the runtime-aligned record structure.</p>
+<h3 id="3-query-post-processing-and-query-override">3. Query Post-Processing and Query Override</h3>
+<ul>
+<li>The system-composed query can be refined before execution, for example by adding additional conditions</li>
+<li>The query execution layer can be programmatically replaced with a manually composed query, provided that the resulting projection complies with the effective entity metadata and requested column set. The List View binding contract toward the client remains unchanged.</li>
+</ul>
+<p>The List View request always determines the required column set, so the final query includes the requested columns. This mechanism represents a full customization level, enabling integration of specialized data sources, optimized queries, and highly specific business logic into the List View data flow.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In multi-provider scenarios, the RecroGrid Framework enables provider-specific entity configurations while preserving a unified application-level entity contract. Provider-specific optimizations can be encapsulated at the data-access abstraction level to maintain consistent List View behavior and metadata usage.</p>
+</div>
+<h3 id="4-client-side-rendering">4. Client-Side Rendering</h3>
+<p>The Blazor WebAssembly client uses the received column metadata and row dictionary to:</p>
+<ul>
+<li>Build columns</li>
+<li>Render values at cell level with type-specific rendering</li>
+<li>Apply the same binding mechanism to calculated and dynamic fields</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Blazor WebAssembly provides the default presentation surface within the integrated client-server architecture. The same query pipeline and entity metadata contract can also be consumed through direct API access by external services or custom GUI layers.</p>
+</div>
+<h2 id="relation-fields-in-list-view-binding">Relation Fields in List View Binding</h2>
+<p>Relation fields act as first-class participants among List View columns:</p>
+<ul>
+<li>In the N:1 direction, fields of the related entity can appear as columns</li>
+<li>In the 1:N direction, related entities can appear as an embedded list in the Form view</li>
+<li>Multi-level relation paths are supported, with metadata controlling the traversal path</li>
+<li>Sorting and filtering on relation fields are processed through the same server-side query composition pipeline</li>
+</ul>
+<p>The column identifier for relation fields is typically a path-like key that can be referenced consistently in the runtime-aligned record structure.</p>
+<h2 id="extended-and-calculated-fields">Extended and Calculated Fields</h2>
+<p>List View data binding naturally supports fields produced during runtime query execution:</p>
+<ul>
+<li>These fields are part of the server-side query projection and are translated to database-level expressions</li>
+<li>Calculated fields expressing business-level values</li>
+<li>Aggregated or consolidated values</li>
+<li>Fields created for specialized presentation purposes</li>
+</ul>
+<h2 id="dynamic-columns-generated-at-runtime">Dynamic Columns Generated at Runtime</h2>
+<p>These columns are generated after the database query has been executed, during server-side post-processing. They are computed per record in managed code and are not part of the database-level projection.</p>
+<ul>
+<li>These columns represent values computed after the database-level projection, based on the query result</li>
+<li>Column metadata can be defined similarly to other properties (Type, Label, Formatting, Display behavior, Interactions)</li>
+<li>External or system-provided context data</li>
+<li>The dynamic columns are generated by invoking custom server-side logic after the database query has executed.</li>
+</ul>
+<h2 id="configuration-level-and-code-level-customization">Configuration Level and Code-Level Customization</h2>
+<p>The RecroGrid Framework builds the List View based on entity metadata, so a single database table can appear through multiple entity variants optimized for different business work contexts. Entity variants describe presentation, interactions, and query context in a unified way, enabling the same underlying data to be used in multiple List View representations with different column sets and behaviors.</p>
+<ul>
+<li>Different column sets and default order</li>
+<li>Different relation paths and traversal depth</li>
+<li>Different calculated and extended fields</li>
+<li>Different List View behaviors and rules (Filters, Sorting, Display recommendations)</li>
+<li>Different Tree and Form views</li>
+<li>Different permission levels</li>
+</ul>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="columns.html">Columns</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="index.html">List View</a></li>
+<li><a href="../treeview.html">Tree View</a></li>
+<li><a href="../formview.html">Form View</a></li>
+<li><a href="../../how-to/entity/index.html">Entity</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

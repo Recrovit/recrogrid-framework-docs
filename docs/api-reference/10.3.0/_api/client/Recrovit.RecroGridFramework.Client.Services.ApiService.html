@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ApiService | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApiService | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Services_ApiService" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService" class="text-break">
+Class ApiService  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiService : IRgfApiService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ApiService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfApiService.html">IRgfApiService</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_DeleteDashboardAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Models_RgfDashboardDefinition_">DashboardApiExtensions.DeleteDashboardAsync(IRgfApiService, RgfDashboardDefinition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_GetDashboardAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_Int32_">DashboardApiExtensions.GetDashboardAsync(IRgfApiService, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_GetDashboardCatalogAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_">DashboardApiExtensions.GetDashboardCatalogAsync(IRgfApiService)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_GetDashboardEntityOptionsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_">DashboardApiExtensions.GetDashboardEntityOptionsAsync(IRgfApiService)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_GetDashboardEntitySettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_Int32_">DashboardApiExtensions.GetDashboardEntitySettingsAsync(IRgfApiService, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.Dashboard.DashboardApiExtensions.html#Recrovit_RecroGridFramework_Client_Services_Dashboard_DashboardApiExtensions_SaveDashboardAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Models_RgfDashboardDefinition_">DashboardApiExtensions.SaveDashboardAsync(IRgfApiService, RgfDashboardDefinition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_CallCustomFunctionAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.CallCustomFunctionAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_DeleteChartSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.DeleteChartSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_DeleteDataAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.DeleteDataAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_DeleteFilterSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.DeleteFilterSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_DeleteGridSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.DeleteGridSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetAboutAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_">IRgfServiceExtension.GetAboutAsync(IRgfApiService)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetAggregatedDataAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetAggregatedDataAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetChartSettingsListAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetChartSettingsListAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetEntityDescAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetEntityDescAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetFilterAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetFilterAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetFormAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetFormAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetPermissionsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_Collections_Generic_IEnumerable_Recrovit_RecroGridFramework_Abstraction_Infrastructure_Security_RecroSecQuery__">IRgfServiceExtension.GetPermissionsAsync(IRgfApiService, IEnumerable&lt;RecroSecQuery&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetRecroGridAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.GetRecroGridAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetResourceAsync__1_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">IRgfServiceExtension.GetResourceAsync&lt;ResultType&gt;(IRgfApiService, string, Dictionary&lt;string, string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_GetUserStateAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_Collections_Generic_Dictionary_System_String_System_String__">IRgfServiceExtension.GetUserStateAsync(IRgfApiService, Dictionary&lt;string, string&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_SaveChartSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.SaveChartSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_SaveFilterSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.SaveFilterSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_SaveGridSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.SaveGridSettingsAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_SaveUserStateSettingsAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_System_Collections_Generic_Dictionary_System_String_System_String__">IRgfServiceExtension.SaveUserStateSettingsAsync(IRgfApiService, Dictionary&lt;string, string?&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_UpdateDataAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_Recrovit_RecroGridFramework_Abstraction_Contracts_API_RgfGridRequest_">IRgfServiceExtension.UpdateDataAsync(IRgfApiService, RgfGridRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfServiceExtension.html#Recrovit_RecroGridFramework_Client_Services_IRgfServiceExtension_VersionCompatibilityAsync_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfApiService_">IRgfServiceExtension.VersionCompatibilityAsync(IRgfApiService)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Services_ApiService__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService__ctor_System_Net_Http_IHttpClientFactory_Microsoft_Extensions_Logging_ILogger_Recrovit_RecroGridFramework_Client_Services_ApiService__Recrovit_RecroGridFramework_Client_Services_IRgfAuthenticationFailureHandler_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.#ctor(System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Logging.ILogger{Recrovit.RecroGridFramework.Client.Services.ApiService},Recrovit.RecroGridFramework.Client.Services.IRgfAuthenticationFailureHandler)">
+  ApiService(IHttpClientFactory, ILogger&lt;ApiService&gt;, IRgfAuthenticationFailureHandler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiService(IHttpClientFactory httpClientFactory, ILogger&lt;ApiService&gt; logger, IRgfAuthenticationFailureHandler authenticationFailureHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>httpClientFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory">IHttpClientFactory</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Recrovit.RecroGridFramework.Client.Services.ApiService.html">ApiService</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>authenticationFailureHandler</code> <a class="xref" href="Recrovit.RecroGridFramework.Client.Services.IRgfAuthenticationFailureHandler.html">IRgfAuthenticationFailureHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_RgfApiClientName" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.RgfApiClientName">
+  RgfApiClientName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RgfApiClientName = &quot;RGF.API&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_RgfAuthApiClientName" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.RgfAuthApiClientName">
+  RgfAuthApiClientName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RgfAuthApiClientName = &quot;RGF.API.AUTH&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Services_ApiService_BaseAddress_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.BaseAddress*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_BaseAddress" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.BaseAddress">
+  BaseAddress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BaseAddress { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Services_ApiService_ExternalBaseAddress_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.ExternalBaseAddress*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_ExternalBaseAddress" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.ExternalBaseAddress">
+  ExternalBaseAddress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ExternalBaseAddress { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Services_ApiService_GetAsync_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.GetAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_GetAsync__1_Recrovit_RecroGridFramework_Abstraction_Infrastructure_API_IRgfApiRequest_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.GetAsync``1(Recrovit.RecroGridFramework.Abstraction.Infrastructure.API.IRgfApiRequest)">
+  GetAsync&lt;ResultType&gt;(IRgfApiRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IRgfApiResponse&lt;ResultType&gt;&gt; GetAsync&lt;ResultType&gt;(IRgfApiRequest request) where ResultType : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Infrastructure.API.IRgfApiRequest.html">IRgfApiRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/API/IRgfApiResponse.cs">IRgfApiResponse</a>&lt;ResultType&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ResultType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Services_ApiService_PostAsync_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.PostAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Services_ApiService_PostAsync__1_Recrovit_RecroGridFramework_Abstraction_Infrastructure_API_IRgfApiRequest_" data-uid="Recrovit.RecroGridFramework.Client.Services.ApiService.PostAsync``1(Recrovit.RecroGridFramework.Abstraction.Infrastructure.API.IRgfApiRequest)">
+  PostAsync&lt;ResultType&gt;(IRgfApiRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Services/ApiService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IRgfApiResponse&lt;ResultType&gt;&gt; PostAsync&lt;ResultType&gt;(IRgfApiRequest request) where ResultType : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="../abstraction/Recrovit.RecroGridFramework.Abstraction.Infrastructure.API.IRgfApiRequest.html">IRgfApiRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Infrastructure/API/IRgfApiResponse.cs">IRgfApiResponse</a>&lt;ResultType&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ResultType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

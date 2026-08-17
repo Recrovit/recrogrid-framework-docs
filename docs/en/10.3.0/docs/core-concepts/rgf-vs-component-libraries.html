@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Thinking in RecroGrid Framework vs Component Libraries | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Thinking in RecroGrid Framework vs Component Libraries | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="thinking-in-recrogrid-framework-vs-component-libraries">Thinking in RecroGrid Framework vs Component Libraries</h1>
+
+<p>To understand the RecroGrid Framework, it is useful to start from the world of classical UI component libraries such as <a href="https://www.devexpress.com/blazor/">DevExpress</a>, <a href="https://www.mescius.eu/componentone/blazor-ui-controls">MESCIUS</a>, <a href="https://www.syncfusion.com/blazor-components">Syncfusion</a> and <a href="https://www.telerik.com/blazor-ui">Telerik</a>. However, it is essential to recognize that the RecroGrid Framework operates at a higher level of abstraction as an integrated application platform that goes far beyond traditional component-library thinking.</p>
+<p>Component libraries typically provide individual visual elements to developers – grids, form components, charts – which must be manually assembled, configured, bound to data sources, connected to APIs, and extended with authorization logic. Their documentation reflects this approach: it explains in detail how to initialize a specific grid, handle events, bind data sources, and implement validation.</p>
+<p>With the RecroGrid Framework, the focus is fundamentally different.</p>
+<h2 id="entity---view-as-an-application-capability">Entity -&gt; View as an Application Capability</h2>
+<p>From a component library perspective, a grid or form is a UI element that must be explicitly created and configured.</p>
+<p>In the RecroGrid Framework, the primary building block is the entity.</p>
+<p>Once a business entity is defined in the C#-based data model – for example using Entity Framework – the system interprets it as an application capability. The entity automatically provides:</p>
+<ul>
+<li>The list view</li>
+<li>The form view</li>
+<li>Corresponding API endpoints</li>
+<li>Built-in relation handling capabilities</li>
+</ul>
+<p>The developer does not configure a grid component. Instead, they define a business object. Based on this definition, the RecroGrid Framework creates the complete, fully functional data management surface at runtime through intelligent abstraction – on both client and server sides.</p>
+<p>This approach elevates the entity to an application-level unit rather than treating it as a simple data structure.</p>
+<h2 id="architectural-relationship">Architectural Relationship</h2>
+<p>In traditional component libraries, much of the behavior is implemented through declarative or imperative code. Grid behavior, column definitions, and editing modes typically appear in concrete, component-specific code blocks.</p>
+<p>The RecroGrid Framework applies a metadata-driven, runtime-interpreted model.</p>
+<ul>
+<li>The data model and system configuration together act as metadata.</li>
+<li>The system interprets them at runtime.</li>
+<li>The UI and API layers are constructed consistently from the same underlying model.</li>
+</ul>
+<p>As a result, application behavior can be shaped to a large extent through configuration – even in a production environment. Form layouts, field visibility, authorization rules, and grid settings can all be parameterized while the structural foundation remains stable.</p>
+<p>For this reason, you will not find hundreds of lines of sample code demonstrating grid initialization in the documentation. In the RecroGrid Framework, such code is unnecessary. The grid is not an isolated UI component; it is a natural consequence of the entity-based application model. Once an entity is defined in the data model, its corresponding list view, form view, API endpoint, and relation management capabilities become immediately available in an integrated manner on both client and server sides.</p>
+<p>Moreover, the functionality extends well beyond what is typically implied by component library documentation. The RecroGrid Framework natively provides field-level authorization, filtering and sorting on related entity fields within grid views, and persistence of user preferences including filters, sorting rules, column order, and other view parameters. These capabilities are intrinsic to the application model and are immediately available in a unified manner, delivering a significantly higher level of built-in intelligence than typical component-level implementations.</p>
+<h2 id="code-level-extension-points">Code-Level Extension Points</h2>
+<p>A high level of automation does not imply loss of control.</p>
+<p>Behind every generated behavior, the RecroGrid Framework provides well-defined C# extension points, including:</p>
+<ul>
+<li>Overridable methods</li>
+<li>Event handlers</li>
+<li>Service-layer extensions</li>
+<li>Validation and workflow hooks</li>
+</ul>
+<p>The UI layer is architecturally decoupled from the core application model and can be replaced at the package level within the framework’s default operation.</p>
+<p>At the same time, the layered client-side abstraction model allows fine-grained customization. Individual views, components, or even specific fields within a form can be overridden or extended with custom implementations without impacting the underlying domain model or server-side logic.</p>
+<p>Application-specific customizations that directly depend on a particular UI implementation are naturally outside the scope of automatic portability; however, the RecroGrid Framework core remains strictly UI-agnostic and consistent in its runtime behavior.</p>
+<p>Developers can:</p>
+<ul>
+<li>Customize individual components at code level</li>
+<li>Replace specific UI elements</li>
+<li>Integrate alternative UI libraries</li>
+<li>Implement a fully custom presentation layer</li>
+</ul>
+<p>All while preserving the unified runtime behavior and the integrated client-server architecture of the RecroGrid Framework.</p>
+<p>Developers do not work with component-specific UI APIs. Instead, they intervene using standard .NET and C# tools. Custom logic is implemented precisely where it is business-relevant, while the framework continues to ensure consistent, integrated operation.</p>
+<p>This model:</p>
+<ul>
+<li>Eliminates repetitive, framework-specific boilerplate code</li>
+<li>Encourages clean domain-driven logic</li>
+<li>Improves long-term maintainability</li>
+</ul>
+<h2 id="why-the-documentation-follows-a-different-logic">Why the Documentation Follows a Different Logic</h2>
+<p>In a component library, documentation typically explains how to create a grid component, configure columns, handle events, bind data sources, and attach additional features.</p>
+<p>In the RecroGrid Framework, this behavior is automatic. Therefore, the central questions of the documentation are:</p>
+<ul>
+<li>How to model the business entity</li>
+<li>How to configure behavior</li>
+<li>Where to extend the system with C# when custom functionality is required</li>
+</ul>
+<p>The emphasis lies on the logic of the application model, the integrated client-server architecture, and the runtime automation mechanisms. The RecroGrid Framework elevates development to a higher level: instead of focusing on grid- and form-level technical details, the primary objective becomes the definition of business capabilities.</p>
+<p>This shift in perspective is fundamental to understanding the system.</p>
+<h2 id="next-step">Next step</h2>
+<ul>
+<li><a href="architecture-and-technologies.html">Architecture and Technologies</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../system-features.html">Features</a></li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

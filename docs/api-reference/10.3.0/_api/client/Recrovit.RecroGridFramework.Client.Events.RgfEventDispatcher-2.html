@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RgfEventDispatcher&lt;TEvent, TArgs&gt; | RecroGrid Framework </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RgfEventDispatcher&lt;TEvent, TArgs&gt; | RecroGrid Framework ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../api/client/toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="RecroGrid Framework">
+            RecroGrid Framework
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2">
+
+
+
+  <h1 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2" class="text-break">
+Class RgfEventDispatcher&lt;TEvent, TArgs&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Recrovit.html">Recrovit</a>.<a class="xref" href="Recrovit.RecroGridFramework.html">RecroGridFramework</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.html">Client</a>.<a class="xref" href="Recrovit.RecroGridFramework.Client.Events.html">Events</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Recrovit.RecroGridFramework.Client.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RgfEventDispatcher&lt;TEvent, TArgs&gt; where TEvent : notnull where TArgs : EventArgs</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEvent</code></dt>
+    <dd></dd>
+    <dt><code>TArgs</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RgfEventDispatcher&lt;TEvent, TArgs&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2__ctor_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.#ctor*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2__ctor" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.#ctor">
+  RgfEventDispatcher()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RgfEventDispatcher()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_DispatchEventAsync_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.DispatchEventAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_DispatchEventAsync__0_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.DispatchEventAsync(`0,Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1})">
+  DispatchEventAsync(TEvent, IRgfEventArgs&lt;TArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DispatchEventAsync(TEvent eventName, IRgfEventArgs&lt;TArgs&gt; args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_RaiseEventAsync_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.RaiseEventAsync*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_RaiseEventAsync__0_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.RaiseEventAsync(`0,System.Object)">
+  RaiseEventAsync(TEvent, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RaiseEventAsync(TEvent eventKind, object sender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventKind</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task},System.Object)">
+  Subscribe(Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; Subscribe(Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0_System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___System_Boolean_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0,System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}},System.Boolean,System.Object)">
+  Subscribe(TEvent, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;, bool, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; Subscribe(TEvent eventName, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler, bool useDefaultHandler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>useDefaultHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0_System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0,System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}},System.Object)">
+  Subscribe(TEvent, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; Subscribe(TEvent eventName, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0_System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__System_Boolean_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0,System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task},System.Boolean,System.Object)">
+  Subscribe(TEvent, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;, bool, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; Subscribe(TEvent eventName, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler, bool useDefaultHandler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>useDefaultHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0_System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0,System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task},System.Object)">
+  Subscribe(TEvent, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; Subscribe(TEvent eventName, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0___System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___System_Boolean_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0[],System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}},System.Boolean,System.Object)">
+  Subscribe(TEvent[], Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;, bool, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; Subscribe(TEvent[] eventNames, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler, bool useDefaultHandler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>useDefaultHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0___System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0[],System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}},System.Object)">
+  Subscribe(TEvent[], Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; Subscribe(TEvent[] eventNames, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0___System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__System_Boolean_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0[],System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task},System.Boolean,System.Object)">
+  Subscribe(TEvent[], Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;, bool, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; Subscribe(TEvent[] eventNames, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler, bool useDefaultHandler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>useDefaultHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Subscribe__0___System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Subscribe(`0[],System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task},System.Object)">
+  Subscribe(TEvent[], Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; Subscribe(TEvent[] eventNames, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler, object? subscriberTarget = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}})">
+  Unsubscribe(Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task})">
+  Unsubscribe(Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_System_Object_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(System.Object)">
+  Unsubscribe(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(object subscriberTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subscriberTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe__0_System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(`0,System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}})">
+  Unsubscribe(TEvent, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(TEvent eventName, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe__0_System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(`0,System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task})">
+  Unsubscribe(TEvent, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(TEvent eventName, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe__0___System_Action_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1___" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(`0[],System.Action{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1}})">
+  Unsubscribe(TEvent[], Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(TEvent[] eventNames, Action&lt;IRgfEventArgs&lt;TArgs&gt;&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe_" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe*"></a>
+
+  <h3 id="Recrovit_RecroGridFramework_Client_Events_RgfEventDispatcher_2_Unsubscribe__0___System_Func_Recrovit_RecroGridFramework_Abstraction_Contracts_Services_IRgfEventArgs__1__System_Threading_Tasks_Task__" data-uid="Recrovit.RecroGridFramework.Client.Events.RgfEventDispatcher`2.Unsubscribe(`0[],System.Func{Recrovit.RecroGridFramework.Abstraction.Contracts.Services.IRgfEventArgs{`1},System.Threading.Tasks.Task})">
+  Unsubscribe(TEvent[], Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Client/Events/RgfEventDispatcher.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe(TEvent[] eventNames, Func&lt;IRgfEventArgs&lt;TArgs&gt;, Task&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventNames</code> TEvent[]</dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://github.com/Recrovit/rgf-client/blob/9d2b01d2cc217714480a3bc17cbe2d880a0442c3/src/RGF.Abstraction/Contracts/Services/IRgfEventNotificationService.cs">IRgfEventArgs</a>&lt;TArgs&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2011-2026 Recrovit Kft.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
